@@ -10,7 +10,6 @@ int nowrectcolor;
 int rectswitch[NUM * NUM] = {0};
 float firstSequenceBuf;
 float SecondSequenceBuf;
-int rectmode;
 float width;
 float height;
 float xinterval;
@@ -71,7 +70,6 @@ void Intro::update(){
 			firstSequenceBuf += 0.6;
 		}
 	}
-
 	else{
 		if (SecondSequenceBuf > 7.2){
 			rectmode = 1;
@@ -88,7 +86,6 @@ void Intro::update(){
 			SecondSequenceBuf += 0.6;
 		}
 	}
-
 }
 
 //--------------------------------------------------------------

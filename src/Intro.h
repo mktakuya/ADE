@@ -11,4 +11,5 @@ class Intro : public ofBaseApp{
 		void drawBigRect(float *param);
 		void drawSomeRect(float *param, int *switcher);
 
+    int rectmode;
 };

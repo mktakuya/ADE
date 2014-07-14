@@ -2,6 +2,9 @@
 
 #include "ofMain.h"
 
+// Scenes
+#include "Intro.h"
+
 class ofApp : public ofBaseApp{
     
 public:
@@ -19,4 +22,8 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
+    int sceneNumber;
+    
+    // Scenes
+    Intro s01Intro;
 };
