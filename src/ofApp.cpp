@@ -3,10 +3,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetFullscreen(true);
-    
-    // setup Scenes
-    s01Intro.setup();
-    s02Rectangular.setup();
+    sceneChangedFlag = false;
 }
 
 //--------------------------------------------------------------
@@ -14,9 +11,17 @@ void ofApp::update(){
     // update scenes
     switch (sceneNumber) {
         case 1:
+            if (sceneChangedFlag == true) {
+                s01Intro.setup();
+                sceneChangedFlag = false;
+            }
             s01Intro.update();
             break;
         case 2:
+            if (sceneChangedFlag == true) {
+                s02Rectangular.setup();
+                sceneChangedFlag = false;
+            }
             s02Rectangular.update();
             break;
     }
@@ -39,6 +44,7 @@ void ofApp::draw(){
 void ofApp::keyPressed(int key){
     if (key == OF_KEY_RETURN) {
         sceneNumber++;
+        sceneChangedFlag = true;
     }
     
     // Scenes

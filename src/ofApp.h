@@ -24,6 +24,7 @@ public:
     void gotMessage(ofMessage msg);
     
     int sceneNumber;
+    bool sceneChangedFlag;
     
     // Scenes
     Intro s01Intro;
