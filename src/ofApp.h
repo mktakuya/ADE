@@ -4,6 +4,7 @@
 
 // Scenes
 #include "Intro.h"
+#include "Rectangular.h"
 
 class ofApp : public ofBaseApp{
     
@@ -26,4 +27,5 @@ public:
     
     // Scenes
     Intro s01Intro;
+    Rectangular s02Rectangular;
 };
