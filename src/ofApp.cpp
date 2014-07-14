@@ -6,6 +6,7 @@ void ofApp::setup(){
     
     // setup Scenes
     s01Intro.setup();
+    s02Rectangular.setup();
 }
 
 //--------------------------------------------------------------
@@ -14,6 +15,9 @@ void ofApp::update(){
     switch (sceneNumber) {
         case 1:
             s01Intro.update();
+            break;
+        case 2:
+            s02Rectangular.update();
             break;
     }
 }
@@ -24,6 +28,9 @@ void ofApp::draw(){
     switch (sceneNumber) {
         case 1:
             s01Intro.draw();
+            break;
+        case 2:
+            s02Rectangular.draw();
             break;
     }
 }
