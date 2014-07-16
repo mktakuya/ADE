@@ -2,14 +2,10 @@
 
 #include "ofMain.h"
 
-// Scenes
-#include "Intro.h"
-#include "Rectangular.h"
-#include "Bubbles.h"
-#include "Tile.h"
+#define TILE_LINE 6
+#define TILE_COLUMN 10
 
-class ofApp : public ofBaseApp{
-    
+class Tile : public ofBaseApp{
 public:
     void setup();
     void update();
@@ -25,12 +21,17 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
-    int sceneNumber;
-    bool sceneChangedFlag;
+    int frame;
     
-    // Scenes
-    Intro s01Intro;
-    Rectangular s02Rectangular;
-    Bubbles s03Bubbles;
-    Tile s04Tile;
+    int colorFlag[TILE_LINE][TILE_COLUMN];
+    
+    int tileWidth;
+    int tileHeight;
+    
+    int tileX[TILE_LINE][TILE_COLUMN] = {0};
+    int tileY[TILE_LINE][TILE_COLUMN] = {0};
+    
+    int tileR[TILE_LINE][TILE_COLUMN];
+    int tileG[TILE_LINE][TILE_COLUMN];
+    int tileB[TILE_LINE][TILE_COLUMN];
 };

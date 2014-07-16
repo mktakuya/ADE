@@ -3,6 +3,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetFullscreen(true);
+    ofHideCursor();
     sceneChangedFlag = false;
 }
 
@@ -17,6 +18,7 @@ void ofApp::update(){
             }
             s01Intro.update();
             break;
+            
         case 2:
             if (sceneChangedFlag == true) {
                 s02Rectangular.setup();
@@ -24,12 +26,22 @@ void ofApp::update(){
             }
             s02Rectangular.update();
             break;
+            
         case 3:
             if (sceneChangedFlag == true) {
                 s03Bubbles.setup();
                 sceneChangedFlag = false;
             }
             s03Bubbles.update();
+            break;
+            
+        case 4:
+            if (sceneChangedFlag == true) {
+                ofFill();
+                s04Tile.setup();
+                sceneChangedFlag = false;
+            }
+            s04Tile.update();
             break;
     }
 }
@@ -41,11 +53,18 @@ void ofApp::draw(){
         case 1:
             s01Intro.draw();
             break;
+            
         case 2:
             s02Rectangular.draw();
             break;
+            
         case 3:
             s03Bubbles.draw();
+            break;
+            
+        case 4:
+            s04Tile.draw();
+            break;
     }
 }
 
