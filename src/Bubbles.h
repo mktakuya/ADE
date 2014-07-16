@@ -1,13 +1,9 @@
 #pragma once
 
 #include "ofMain.h"
+#define BUBBLES_NUM 45
 
-// Scenes
-#include "Intro.h"
-#include "Rectangular.h"
-#include "Bubbles.h"
-
-class ofApp : public ofBaseApp{
+class Bubbles : public ofBaseApp{
     
 public:
     void setup();
@@ -24,11 +20,12 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
-    int sceneNumber;
-    bool sceneChangedFlag;
     
-    // Scenes
-    Intro s01Intro;
-    Rectangular s02Rectangular;
-    Bubbles s03Bubbles;
+    int bubbleR[BUBBLES_NUM];
+    int bubbleG[BUBBLES_NUM];
+    int bubbleB[BUBBLES_NUM];
+    int bubbleX[BUBBLES_NUM];
+    int bubbleY[BUBBLES_NUM];
+    int bubbleRadius[BUBBLES_NUM];
+    int bubbleMaxSize[BUBBLES_NUM];
 };

@@ -24,6 +24,13 @@ void ofApp::update(){
             }
             s02Rectangular.update();
             break;
+        case 3:
+            if (sceneChangedFlag == true) {
+                s03Bubbles.setup();
+                sceneChangedFlag = false;
+            }
+            s03Bubbles.update();
+            break;
     }
 }
 
@@ -37,6 +44,8 @@ void ofApp::draw(){
         case 2:
             s02Rectangular.draw();
             break;
+        case 3:
+            s03Bubbles.draw();
     }
 }
 
