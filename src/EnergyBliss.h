@@ -3,18 +3,16 @@
 #include "ofMain.h"
 
 class EnergyBliss : public ofBaseApp{
-
-	public:
-		void setup();
-		void update();
-		void draw();
-
-		int clocks;
-		int piece;
-
-		float randx[35];
-		float randy[35];
-		float randz[35];
-		float pNoise[35];
-		
+public:
+    void setup();
+    void update();
+    void draw();
+    
+    int clocks;
+    int piece;
+    
+    float randx[35];
+    float randy[35];
+    float randz[35];
+    float pNoise[35];
 };

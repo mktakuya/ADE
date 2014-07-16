@@ -2,7 +2,6 @@
 
 //--------------------------------------------------------------
 void Intro::setup(){
-    
 	nowrectcolor = 0;
 	pastrectcolor = 1;
 	rectmode = 1;
@@ -17,12 +16,10 @@ void Intro::setup(){
 	ofEnableSmoothing();
 	ofEnableAlphaBlending();
 	ofBackground(255);
-    
 }
 
 //--------------------------------------------------------------
 void Intro::update(){
-    
 	if (rectmode == 1){
 		if (firstSequenceBuf > 6.0){
 			rectmode = 2; 
@@ -74,7 +71,6 @@ void Intro::update(){
 
 //--------------------------------------------------------------
 void Intro::draw(){
-    
 	if(rectmode == 1){
 		drawBigRect(param[nowrectcolor]);
 		ofSleepMillis(CLOCK);
@@ -84,19 +80,15 @@ void Intro::draw(){
 		drawSomeRect(rectColor, rectswitch);
 		ofSleepMillis(CLOCK);
 	}
-    
 }
 
 void Intro::drawBigRect(float *param){
-    
 	ofSetColor(param[0], param[1], param[2], param[3]);
 	ofFill();
 	ofRect(0, 0, ofGetWidth(), ofGetHeight());
-    
 }
 
 void Intro::drawSomeRect(float *param, int *switcher){
-	
 	for (int i = 0; i < NUM; i++){
 		for (int j = 0; j < NUM; j++){
 			if(switcher[i + 1 * j + 1] == 1){

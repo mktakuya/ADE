@@ -4,7 +4,6 @@
 #define BUBBLES_NUM 45
 
 class Bubbles : public ofBaseApp{
-    
 public:
     void setup();
     void update();
@@ -19,7 +18,6 @@ public:
     void windowResized(int w, int h);
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
-    
     
     int bubbleR[BUBBLES_NUM];
     int bubbleG[BUBBLES_NUM];

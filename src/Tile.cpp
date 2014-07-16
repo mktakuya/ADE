@@ -30,7 +30,6 @@ void Tile::setup(){
                     tileB[i][j] = 0;
                     break;
             }
-            
             tileX[i][j] = 10 * j + j * tileWidth;
             tileY[i][j] = 10 * i + i * tileHeight;
         }
