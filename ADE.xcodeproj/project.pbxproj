@@ -10,6 +10,7 @@
 		8F6B7B5B197658F600E0C2CC /* Bubbles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B7B59197658F600E0C2CC /* Bubbles.cpp */; };
 		8F7435401973C860004DAC03 /* Intro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F74353E1973C860004DAC03 /* Intro.cpp */; };
 		8F7435581973DA20004DAC03 /* Rectangular.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F7435561973DA20004DAC03 /* Rectangular.cpp */; };
+		8FA6E3851976667000427216 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6E3831976667000427216 /* Tile.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -68,6 +69,8 @@
 		8F74353F1973C860004DAC03 /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
 		8F7435561973DA20004DAC03 /* Rectangular.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangular.cpp; sourceTree = "<group>"; };
 		8F7435571973DA20004DAC03 /* Rectangular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangular.h; sourceTree = "<group>"; };
+		8FA6E3831976667000427216 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
+		8FA6E3841976667000427216 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -189,6 +192,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8FA6E3831976667000427216 /* Tile.cpp */,
+				8FA6E3841976667000427216 /* Tile.h */,
 				8F6B7B59197658F600E0C2CC /* Bubbles.cpp */,
 				8F6B7B5A197658F600E0C2CC /* Bubbles.h */,
 				8F7435561973DA20004DAC03 /* Rectangular.cpp */,
@@ -301,6 +306,7 @@
 				8F7435581973DA20004DAC03 /* Rectangular.cpp in Sources */,
 				8F7435401973C860004DAC03 /* Intro.cpp in Sources */,
 				8F6B7B5B197658F600E0C2CC /* Bubbles.cpp in Sources */,
+				8FA6E3851976667000427216 /* Tile.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 			);
