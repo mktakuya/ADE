@@ -7,6 +7,7 @@
 #include "Rectangular.h"
 #include "Bubbles.h"
 #include "Tile.h"
+#include "EnergyBliss.h"
 
 class ofApp : public ofBaseApp{
     
@@ -33,4 +34,5 @@ public:
     Rectangular s02Rectangular;
     Bubbles s03Bubbles;
     Tile s04Tile;
+    EnergyBliss s05EnergyBliss;
 };

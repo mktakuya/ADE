@@ -43,6 +43,14 @@ void ofApp::update(){
             }
             s04Tile.update();
             break;
+            
+        case 5:
+            if (sceneChangedFlag == true) {
+                s05EnergyBliss.setup();
+                sceneChangedFlag = false;
+            }
+            s05EnergyBliss.update();
+            break;
     }
 }
 
@@ -64,6 +72,10 @@ void ofApp::draw(){
             
         case 4:
             s04Tile.draw();
+            break;
+            
+        case 5:
+            s05EnergyBliss.draw();
             break;
     }
 }
