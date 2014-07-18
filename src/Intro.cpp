@@ -1,7 +1,7 @@
-#include "ofApp.h"
+#include "Intro.h"
 
 //--------------------------------------------------------------
-void ofApp::setup(){
+void Intro::setup(){
 	nowrectcolor = 0;
 	pastrectcolor = 1;
 	rectmode = 0;
@@ -26,7 +26,7 @@ void ofApp::setup(){
 }
 
 //--------------------------------------------------------------
-void ofApp::update(){
+void Intro::update(){
 	if (rectmode == 1){
 		if (firstSequenceBuf > 6.0){
 			rectmode = 2; 
@@ -77,7 +77,7 @@ void ofApp::update(){
 }
 
 //--------------------------------------------------------------
-void ofApp::draw(){
+void Intro::draw(){
 	float param[4][4] = { {0, 0, 0, 255}, {255, 255, 255, 127}, {233, 255, 0, 127}, {0, 195, 255, 127} };
 	float rectColor[4] = {75, 100, 161, 127};
 	if(rectmode == 1)
@@ -87,13 +87,13 @@ void ofApp::draw(){
 	ofSleepMillis(clocks);
 }
 
-void ofApp::drawBigRect(float *param){
+void Intro::drawBigRect(float *param){
 	ofSetColor(param[0], param[1], param[2], param[3]);
 	ofFill();
 	ofRect(0, 0, ofGetWidth(), ofGetHeight());
 }
 
-void ofApp::drawSomeRect(float *param, int *switcher){
+void Intro::drawSomeRect(float *param, int *switcher){
 	for (int i = 0; i < num; i++){
 		for (int j = 0; j < num; j++){
 			if(switcher[i * j] == 1){
