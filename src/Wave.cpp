@@ -1,11 +1,11 @@
-#include "Wava.h"
+#include "Wave.h"
 
 //--------------------------------------------------------------
 void Wave::setup(){
 
 	ofEnableSmoothing();
 	ofBackground(255);
-	ofSetcircleResolution(128);
+	ofSetCircleResolution(128);
 
 	x = ofGetWidth() / 2.0;
 	y = ofGetHeight() / 2.0;
