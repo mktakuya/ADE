@@ -4,7 +4,7 @@
 void Intro::setup(){
 	nowrectcolor = 0;
 	pastrectcolor = 1;
-	rectmode = 0;
+	rectmode = 1;
 	firstSequenceBuf = 0;
 	SecondSequenceBuf = 0;
 	clocks = 600;
