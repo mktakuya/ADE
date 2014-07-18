@@ -1,75 +1,61 @@
 #include "Stripe.h"
 
+#define COEF 0.05
+
+float color[150][3];
+float diff[150] = {0};
+float loc [150] = {0};
+float movement[150];
+
 //--------------------------------------------------------------
 void Stripe::setup(){
 
-	ofEnableSmoothing();
 	ofBackground(255);
-	ofSetFrameRate(50);
+	ofEnableSmoothing();
 
-	rotateFlag = false;
-	even = true;
-	degree = 0;
-	colorType = 0;
+	float width = ofGetWidth();
+	int i = 0;
+	while (width >= 0) {
+		for (int cnt = 0; cnt < 3; cnt++) {
+			color[i][cnt] = ofRandom(255); //RGB
+		}
+		diff[i] = ofRandom(40, 70); //dL
+		movement[i] = diff[i] * COEF; //dL * COEF = vec(x)
+		width -= diff[i];
+		for (int j = 0; j < i; j++) {
+			loc[i + 1] += diff[j]; //dx
+		}
+
+		i++;
+	}
 
 }
 
 //--------------------------------------------------------------
 void Stripe::update(){
 
-	if(rotateFlag == false) {
-		if(colorType == 3) {
-			colorType = 0;
+	for (int i = 0; i < 150; i++) {
+		if (loc[i] >= ofGetWidth()) {
+			loc[i] = diff[i] * -1;
+			for (int j = 0; j < 3; j++) {
+				color[i][j] = ofRandom(255); // Reset RGB
+			}
 		}
-		else
-			colorType += 1;
-	}
-	else {
-		if (degree >= 360) {
-			rotateFlag = false;
-			colorType++;
-			degree = 0;
+		else {
+			loc[i] += movement[i];
 		}
-		degree += 2;
 	}
 
 }
 
 //--------------------------------------------------------------
 void Stripe::draw(){
-	float color[4][3] = {{127, 177, 201}, {255, 210, 92}, {202, 228, 79}, {255, 195, 89}};
 
-	if (rotateFlag == false) {
-		for (int i = 0; i < ofGetWidth() / 60; i++){
-			if ((i + colorType)%2 != 0) 
-				ofSetColor(color[colorType][0], color[colorType][1], color[colorType][2]);
-			else 
-				ofSetColor(255);
-			ofRect(i * 60, 0, 60, ofGetHeight());
-		}
-		ofSleepMillis(500);
+	for (int  i = 0; i < 150; i++) {
+		ofSetColor(color[i][0], color[i][1], color[i][2]);
+		ofFill();
+		ofRect(loc[i], 0, diff[i], ofGetHeight());
 	}
 
-	else {
-		for (int i = 0; i < ofGetWidth() / 60; i++) {
-			if ((i + colorType)%2 != 0) 
-				ofSetColor(color[colorType][0], color[colorType][1], color[colorType][2]);
-			else 
-				ofSetColor(255);
-			ofPushMatrix();
-			ofTranslate(i * 60 - 30, 0);
-			ofRotateY(degree);
-			ofRect(-30, 0, 60, ofGetHeight());
-			ofPopMatrix();
-		}
-	}
-}
-
-//--------------------------------------------------------------
-void ofApp::keyPressed(int key){
-
-	if (key == OF_KEY_RETURN) { 
-		rotateFlag = true;
-	}
-
+	//ofSleepMillis(300);
 }
