@@ -1,25 +1,32 @@
-#include "Intro.h"
+#include "ofApp.h"
 
 //--------------------------------------------------------------
-void Intro::setup(){
+void ofApp::setup(){
 	nowrectcolor = 0;
 	pastrectcolor = 1;
-	rectmode = 1;
+	rectmode = 0;
 	firstSequenceBuf = 0;
 	SecondSequenceBuf = 0;
+	clocks = 600;
+	num = 5;
     
-	width = 100;
-	height = 100;
-	xinterval = (ofGetWidth() - width * 4) / 5.0;
-	yinterval = (ofGetHeight() - height * 4) / 5.0;
+	width = 80;
+	height = 80;
+	xinterval = (ofGetWidth() - width * num) / (num + 1);
+	yinterval = (ofGetHeight() - height * num) / (num + 1);
+	for (int i = 0; i < 25; i++)
+		rectswitch[i]  = 0;
     
 	ofEnableSmoothing();
 	ofEnableAlphaBlending();
-	ofBackground(255);
+	if (rectmode == 1)
+		ofBackground(255);
+	else 
+		ofBackground(0);
 }
 
 //--------------------------------------------------------------
-void Intro::update(){
+void ofApp::update(){
 	if (rectmode == 1){
 		if (firstSequenceBuf > 6.0){
 			rectmode = 2; 
@@ -70,28 +77,26 @@ void Intro::update(){
 }
 
 //--------------------------------------------------------------
-void Intro::draw(){
-	if(rectmode == 1){
-		drawBigRect(param[nowrectcolor]);
-		ofSleepMillis(CLOCK);
-	}
-    
-	else{
+void ofApp::draw(){
+	float param[4][4] = { {0, 0, 0, 255}, {255, 255, 255, 127}, {233, 255, 0, 127}, {0, 195, 255, 127} };
+	float rectColor[4] = {75, 100, 161, 127};
+	if(rectmode == 1)
+		drawBigRect(param[nowrectcolor]);		
+	else
 		drawSomeRect(rectColor, rectswitch);
-		ofSleepMillis(CLOCK);
-	}
+	ofSleepMillis(clocks);
 }
 
-void Intro::drawBigRect(float *param){
+void ofApp::drawBigRect(float *param){
 	ofSetColor(param[0], param[1], param[2], param[3]);
 	ofFill();
 	ofRect(0, 0, ofGetWidth(), ofGetHeight());
 }
 
-void Intro::drawSomeRect(float *param, int *switcher){
-	for (int i = 0; i < NUM; i++){
-		for (int j = 0; j < NUM; j++){
-			if(switcher[i + 1 * j + 1] == 1){
+void ofApp::drawSomeRect(float *param, int *switcher){
+	for (int i = 0; i < num; i++){
+		for (int j = 0; j < num; j++){
+			if(switcher[i * j] == 1){
 				ofSetColor(param[0], param[1], param[2], param[3]);
 				ofFill();
 				ofRect(xinterval + (j * (xinterval + width)), yinterval + (i * (yinterval + height)), width, height);
