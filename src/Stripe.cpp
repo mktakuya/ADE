@@ -66,10 +66,8 @@ void Stripe::draw(){
 }
 
 //--------------------------------------------------------------
-void ofApp::keyPressed(int key){
-
-	if (key == OF_KEY_RETURN) { 
+void Stripe::keyPressed(int key){
+	if (key == OF_KEY_RETURN) {
 		rotateFlag = true;
 	}
-
 }

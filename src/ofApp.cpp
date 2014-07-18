@@ -51,6 +51,14 @@ void ofApp::update(){
             }
             s05EnergyBliss.update();
             break;
+            
+        case 6:
+            if (sceneChangedFlag == true) {
+                sXXStripe.setup();
+                sceneChangedFlag = false;
+            }
+            sXXStripe.update();
+            break;
     }
 }
 
@@ -76,6 +84,10 @@ void ofApp::draw(){
             
         case 5:
             s05EnergyBliss.draw();
+            break;
+            
+        case 6:
+            sXXStripe.draw();
             break;
     }
 }

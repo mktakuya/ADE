@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F63597A1979796400B9F3AF /* Stripe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6359781979796400B9F3AF /* Stripe.cpp */; };
 		8F6B7B5B197658F600E0C2CC /* Bubbles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B7B59197658F600E0C2CC /* Bubbles.cpp */; };
 		8F7435401973C860004DAC03 /* Intro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F74353E1973C860004DAC03 /* Intro.cpp */; };
 		8F7435581973DA20004DAC03 /* Rectangular.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F7435561973DA20004DAC03 /* Rectangular.cpp */; };
@@ -64,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8F6359781979796400B9F3AF /* Stripe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stripe.cpp; sourceTree = "<group>"; };
+		8F6359791979796400B9F3AF /* Stripe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stripe.h; sourceTree = "<group>"; };
 		8F6B7B59197658F600E0C2CC /* Bubbles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bubbles.cpp; sourceTree = "<group>"; };
 		8F6B7B5A197658F600E0C2CC /* Bubbles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bubbles.h; sourceTree = "<group>"; };
 		8F74353E1973C860004DAC03 /* Intro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Intro.cpp; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8F6359781979796400B9F3AF /* Stripe.cpp */,
+				8F6359791979796400B9F3AF /* Stripe.h */,
 				8FA6E38C19766FA000427216 /* EnergyBliss.cpp */,
 				8FA6E38D19766FA000427216 /* EnergyBliss.h */,
 				8FA6E3831976667000427216 /* Tile.cpp */,
@@ -310,6 +315,7 @@
 			files = (
 				8F7435581973DA20004DAC03 /* Rectangular.cpp in Sources */,
 				8F7435401973C860004DAC03 /* Intro.cpp in Sources */,
+				8F63597A1979796400B9F3AF /* Stripe.cpp in Sources */,
 				8F6B7B5B197658F600E0C2CC /* Bubbles.cpp in Sources */,
 				8FA6E3851976667000427216 /* Tile.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
