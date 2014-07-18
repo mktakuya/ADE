@@ -9,6 +9,8 @@
 #include "Tile.h"
 #include "EnergyBliss.h"
 
+#include "Wave.h"
+
 class ofApp : public ofBaseApp{
 public:
     void setup();
@@ -34,4 +36,7 @@ public:
     Bubbles s03Bubbles;
     Tile s04Tile;
     EnergyBliss s05EnergyBliss;
+    
+    
+    Wave sxxWave;
 };

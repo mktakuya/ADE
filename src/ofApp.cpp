@@ -51,6 +51,14 @@ void ofApp::update(){
             }
             s05EnergyBliss.update();
             break;
+            
+        case 6: // Waveは6ではないけどとりあえず
+            if (sceneChangedFlag == true) {
+                sxxWave.setup();
+                sceneChangedFlag = false;
+            }
+            sxxWave.update();
+            break;
     }
 }
 
@@ -76,6 +84,10 @@ void ofApp::draw(){
             
         case 5:
             s05EnergyBliss.draw();
+            break;
+            
+        case 6:
+            sxxWave.draw();
             break;
     }
 }
