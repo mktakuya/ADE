@@ -10,6 +10,7 @@
 #include "EnergyBliss.h"
 
 #include "Stripe.h"
+#include "Rectfall.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -38,4 +39,7 @@ public:
     EnergyBliss s05EnergyBliss;
     
     Stripe sXXStripe;
+    
+    
+    Rectfall sX1Rectfall;
 };

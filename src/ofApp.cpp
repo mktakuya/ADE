@@ -52,12 +52,22 @@ void ofApp::update(){
             s05EnergyBliss.update();
             break;
             
+        // とりあえず
         case 6:
             if (sceneChangedFlag == true) {
                 sXXStripe.setup();
                 sceneChangedFlag = false;
             }
             sXXStripe.update();
+            break;
+            
+        // とりあえず
+        case 7:
+            if (sceneChangedFlag == true) {
+                sX1Rectfall.setup();
+                sceneChangedFlag = false;
+            }
+            sX1Rectfall.update();
             break;
     }
 }
@@ -88,6 +98,10 @@ void ofApp::draw(){
             
         case 6:
             sXXStripe.draw();
+            break;
+            
+        case 7:
+            sX1Rectfall.draw();
             break;
     }
 }
