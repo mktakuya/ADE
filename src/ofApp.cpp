@@ -69,6 +69,14 @@ void ofApp::update(){
             }
             sX1Rectfall.update();
             break;
+            
+        case 8:
+            if (sceneChangedFlag == true){
+                sX2Hexagon.setup();
+                sceneChangedFlag = false;
+            }
+            sX2Hexagon.update();
+            break;
     }
 }
 
@@ -102,6 +110,10 @@ void ofApp::draw(){
             
         case 7:
             sX1Rectfall.draw();
+            break;
+            
+        case 8:
+            sX2Hexagon.draw();
             break;
     }
 }
