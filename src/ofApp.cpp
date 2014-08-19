@@ -77,6 +77,14 @@ void ofApp::update(){
             }
             sX2Hexagon.update();
             break;
+            
+        case 9:
+            if (sceneChangedFlag == true) {
+                SX3LiveStage.setup();
+                sceneChangedFlag = false;
+            }
+            SX3LiveStage.update();
+            break;
     }
 }
 
@@ -114,6 +122,10 @@ void ofApp::draw(){
             
         case 8:
             sX2Hexagon.draw();
+            break;
+            
+        case 9:
+            SX3LiveStage.draw();
             break;
     }
 }
