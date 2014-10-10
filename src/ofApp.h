@@ -16,6 +16,7 @@
 #include "Arc.h"
 #include "Visualizer.h"
 #include "Ink.h"
+#include "Wave.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -52,4 +53,5 @@ public:
     Arc SX4Arc;
     Visualizer SX5Visualizer;
     Ink SX6Ink;
+    Wave SX7Wave;
 };
