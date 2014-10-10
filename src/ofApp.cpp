@@ -119,6 +119,15 @@ void ofApp::update(){
             }
             SX7Wave.update();
             break;
+            
+        case 14:
+            if (sceneChangedFlag == true) {
+                ofBackground(255);
+                SX8Pentagon.setup();
+                sceneChangedFlag = false;
+            }
+            SX8Pentagon.update();
+            break;
     }
 }
 
@@ -176,6 +185,10 @@ void ofApp::draw(){
             
         case 13:
             SX7Wave.draw();
+            break;
+            
+        case 14:
+            SX8Pentagon.draw();
             break;
     }
 }

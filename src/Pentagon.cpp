@@ -2,7 +2,6 @@
 // Prototype Color
 //--------------------------------------------------------------
 void Pentagon::setup(){
-	ofBackground(255);
 	ofSetCircleResolution(3);
 	ofEnableSmoothing();
 
