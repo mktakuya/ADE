@@ -104,6 +104,7 @@ void ofApp::update(){
             
         case 12:
             if (sceneChangedFlag == true) {
+                ofBackground(0);
                 SX6Ink.setup();
                 sceneChangedFlag = false;
             }

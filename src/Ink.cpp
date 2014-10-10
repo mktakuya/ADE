@@ -5,7 +5,6 @@ void Ink::setup(){
 
 	ofEnableSmoothing();
 	ofSetCircleResolution(64);
-	ofBackground(0);
 	c = circleDiam;
 	circles = 0;
 	d = 0.1;
