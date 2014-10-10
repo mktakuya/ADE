@@ -109,6 +109,15 @@ void ofApp::update(){
             }
             SX6Ink.update();
             break;
+            
+        case 13:
+            if (sceneChangedFlag == true) {
+                ofBackground(255);
+                SX7Wave.setup();
+                sceneChangedFlag = false;
+            }
+            SX7Wave.update();
+            break;
     }
 }
 
@@ -162,6 +171,10 @@ void ofApp::draw(){
             
         case 12:
             SX6Ink.draw();
+            break;
+            
+        case 13:
+            SX7Wave.draw();
             break;
     }
 }
