@@ -28,6 +28,7 @@ void Ink::update(){
 void Ink::draw(){
 
 	for (int i = 0; i < (int)circles; i++) {
+        ofSetColor(255);
 		ofCircle(circlePosition[i], circleDiam[i]);
 	}
 

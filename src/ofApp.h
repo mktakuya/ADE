@@ -15,6 +15,7 @@
 #include "LiveStage.h"
 #include "Arc.h"
 #include "Visualizer.h"
+#include "Ink.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -50,4 +51,5 @@ public:
     LiveStage SX3LiveStage;
     Arc SX4Arc;
     Visualizer SX5Visualizer;
+    Ink SX6Ink;
 };
