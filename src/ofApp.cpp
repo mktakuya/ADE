@@ -93,6 +93,14 @@ void ofApp::update(){
             }
             SX4Arc.update();
             break;
+            
+        case 11:
+            if (sceneChangedFlag == true) {
+                SX5Visualizer.setup();
+                sceneChangedFlag = false;
+            }
+            SX5Visualizer.update();
+            break;
     }
 }
 
@@ -138,6 +146,10 @@ void ofApp::draw(){
             
         case 10:
             SX4Arc.draw();
+            break;
+            
+        case 11:
+            SX5Visualizer.draw();
             break;
     }
 }

@@ -14,6 +14,7 @@
 #include "Hexagon.h"
 #include "LiveStage.h"
 #include "Arc.h"
+#include "Visualizer.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -48,4 +49,5 @@ public:
     Hexagon sX2Hexagon;
     LiveStage SX3LiveStage;
     Arc SX4Arc;
+    Visualizer SX5Visualizer;
 };
