@@ -101,6 +101,14 @@ void ofApp::update(){
             }
             SX5Visualizer.update();
             break;
+            
+        case 12:
+            if (sceneChangedFlag == true) {
+                SX6Ink.setup();
+                sceneChangedFlag = false;
+            }
+            SX6Ink.update();
+            break;
     }
 }
 
@@ -150,6 +158,10 @@ void ofApp::draw(){
             
         case 11:
             SX5Visualizer.draw();
+            break;
+            
+        case 12:
+            SX6Ink.draw();
             break;
     }
 }
