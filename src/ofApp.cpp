@@ -85,6 +85,14 @@ void ofApp::update(){
             }
             SX3LiveStage.update();
             break;
+            
+        case 10:
+            if (sceneChangedFlag == true) {
+                SX4Arc.setup();
+                sceneChangedFlag = false;
+            }
+            SX4Arc.update();
+            break;
     }
 }
 
@@ -126,6 +134,10 @@ void ofApp::draw(){
             
         case 9:
             SX3LiveStage.draw();
+            break;
+            
+        case 10:
+            SX4Arc.draw();
             break;
     }
 }

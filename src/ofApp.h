@@ -13,6 +13,7 @@
 #include "Rectfall.h"
 #include "Hexagon.h"
 #include "LiveStage.h"
+#include "Arc.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -46,4 +47,5 @@ public:
     Rectfall sX1Rectfall;
     Hexagon sX2Hexagon;
     LiveStage SX3LiveStage;
+    Arc SX4Arc;
 };
