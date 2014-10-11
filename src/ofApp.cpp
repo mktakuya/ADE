@@ -104,13 +104,21 @@ void ofApp::update(){
             
         case 14:
             if (sceneChangedFlag == true) {
+                SX9HurlyBurly.setup();
+                sceneChangedFlag = false;
+            }
+            SX9HurlyBurly.update();
+            break;
+            
+        case 15:
+            if (sceneChangedFlag == true) {
                 SX5Visualizer.setup();
                 sceneChangedFlag = false;
             }
             SX5Visualizer.update();
             break;
             
-        case 15:
+        case 16:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 SX6Ink.setup();
@@ -119,7 +127,7 @@ void ofApp::update(){
             SX6Ink.update();
             break;
             
-        case 16:
+        case 17:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX7Wave.setup();
@@ -128,7 +136,7 @@ void ofApp::update(){
             SX7Wave.update();
             break;
             
-        case 17:
+        case 18:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX8Pentagon.setup();
@@ -196,18 +204,22 @@ void ofApp::draw(){
             break;
             
         case 14:
-            SX5Visualizer.draw();
+            SX9HurlyBurly.draw();
             break;
             
         case 15:
-            SX6Ink.draw();
+            SX5Visualizer.draw();
             break;
             
         case 16:
-            SX7Wave.draw();
+            SX6Ink.draw();
             break;
             
         case 17:
+            SX7Wave.draw();
+            break;
+            
+        case 18:
             SX8Pentagon.draw();
             break;
     }
@@ -228,6 +240,16 @@ void ofApp::keyPressed(int key){
                     s01Intro.rectmode = 0;
                 } else {
                     s01Intro.rectmode = 1;
+                }
+            }
+            break;
+            
+        case 14:
+            if (key == ' ') {
+                if (SX9HurlyBurly.fontColorFlag == 0) {
+                    SX9HurlyBurly.fontColorFlag = 1;
+                } else {
+                    SX9HurlyBurly.fontColorFlag = 0;
                 }
             }
             break;
