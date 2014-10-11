@@ -18,7 +18,8 @@
 #include "Ink.h"
 #include "Wave.h"
 #include "Pentagon.h"
-#include "HurlyBurly.h"
+#include "HurlyBurly1.h"
+#include "HurlyBurly2.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -57,5 +58,6 @@ public:
     Ink SX6Ink;
     Wave SX7Wave;
     Pentagon SX8Pentagon;
-    HurlyBurly SX9HurlyBurly;
+    HurlyBurly1 SX9HurlyBurly1;
+    HurlyBurly2 SX10HurlyBurly2;
 };

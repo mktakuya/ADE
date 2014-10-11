@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 
-class HurlyBurly : public ofBaseApp{
+class HurlyBurly1 : public ofBaseApp{
 
 	public:
 		void setup();
@@ -20,5 +20,4 @@ class HurlyBurly : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     ofTrueTypeFont font;
-    int fontColorFlag;
 };

@@ -17,9 +17,7 @@ void Rectfall::setup(){
 		triangleDegree[i] = 90;
 		rectcolorNum[i] = i;
 		trianglecolorNum[i] = i;
-
 	}
-
 }
 
 //--------------------------------------------------------------

@@ -1,4 +1,5 @@
 #include "ofApp.h"
+int testColor = 30;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -11,6 +12,9 @@ void ofApp::setup(){
 void ofApp::update(){
     // update scenes
     switch (sceneNumber) {
+        case 0:
+            break;
+            
         case 1:
             if (sceneChangedFlag == true) {
                 s01Intro.setup();
@@ -87,6 +91,12 @@ void ofApp::update(){
             break;
             
         case 12:
+            break;
+            
+        case 13:
+            break;
+            
+        case 14:
             if (sceneChangedFlag == true) {
                 sX1Rectfall.setup();
                 sceneChangedFlag = false;
@@ -94,7 +104,7 @@ void ofApp::update(){
             sX1Rectfall.update();
             break;
             
-        case 13:
+        case 15:
             if (sceneChangedFlag == true) {
                 SX4Arc.setup();
                 sceneChangedFlag = false;
@@ -102,23 +112,41 @@ void ofApp::update(){
             SX4Arc.update();
             break;
             
-        case 14:
-            if (sceneChangedFlag == true) {
-                SX9HurlyBurly.setup();
-                sceneChangedFlag = false;
-            }
-            SX9HurlyBurly.update();
-            break;
-            
-        case 15:
-            if (sceneChangedFlag == true) {
-                SX5Visualizer.setup();
-                sceneChangedFlag = false;
-            }
-            SX5Visualizer.update();
-            break;
-            
         case 16:
+            if (sceneChangedFlag == true) {
+                SX9HurlyBurly1.setup();
+                sceneChangedFlag = false;
+            }
+            SX9HurlyBurly1.update();
+            break;
+            
+        case 17:
+            if (sceneChangedFlag == true) {
+                SX10HurlyBurly2.setup();
+                sceneChangedFlag = false;
+            }
+            SX10HurlyBurly2.update();
+            break;
+            
+        case 18:
+            break;
+            
+        case 19:
+            break;
+            
+        case 20:
+            break;
+            
+        case 21:
+            break;
+            
+        case 22:
+            break;
+            
+        case 23:
+            break;
+            
+        case 24:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 SX6Ink.setup();
@@ -127,7 +155,31 @@ void ofApp::update(){
             SX6Ink.update();
             break;
             
-        case 17:
+        case 25:
+            break;
+            
+        case 26:
+            break;
+            
+        case 27:
+            break;
+            
+        case 28:
+            break;
+            
+        case 29:
+            if (sceneChangedFlag == true) {
+                ofBackground(0);
+                SX5Visualizer.setup();
+                sceneChangedFlag = false;
+            }
+            SX5Visualizer.update();
+            break;
+            
+        case 50:
+            break;
+            
+        case 51:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX7Wave.setup();
@@ -136,7 +188,7 @@ void ofApp::update(){
             SX7Wave.update();
             break;
             
-        case 18:
+        case 52:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX8Pentagon.setup();
@@ -151,6 +203,10 @@ void ofApp::update(){
 void ofApp::draw(){
     // draw scenes;
     switch (sceneNumber) {
+        case 0:
+            ofBackground(testColor, testColor, testColor);
+            break;
+            
         case 1:
             s01Intro.draw();
             break;
@@ -196,30 +252,90 @@ void ofApp::draw(){
             break;
             
         case 12:
-            sX1Rectfall.draw();
+            ofBackground(0, 0, 255);
             break;
             
         case 13:
-            SX4Arc.draw();
+            ofBackground(0, 0, 255);
             break;
             
         case 14:
-            SX9HurlyBurly.draw();
+            sX1Rectfall.draw();
             break;
             
         case 15:
-            SX5Visualizer.draw();
+            SX4Arc.draw();
             break;
             
         case 16:
-            SX6Ink.draw();
+            SX9HurlyBurly1.draw();
             break;
             
         case 17:
-            SX7Wave.draw();
+            SX10HurlyBurly2.draw();
             break;
             
         case 18:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 19:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 20:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 21:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 22:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 23:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 24:
+            SX6Ink.draw();
+            break;
+            
+        case 25:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 26:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 27:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 28:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 29:
+            SX5Visualizer.draw();
+            break;
+            
+        case 30:
+            
+            
+            
+        case 50:
+            SX6Ink.draw();
+            break;
+            
+        case 51:
+            SX7Wave.draw();
+            break;
+            
+        case 52:
             SX8Pentagon.draw();
             break;
     }
@@ -240,16 +356,6 @@ void ofApp::keyPressed(int key){
                     s01Intro.rectmode = 0;
                 } else {
                     s01Intro.rectmode = 1;
-                }
-            }
-            break;
-            
-        case 14:
-            if (key == ' ') {
-                if (SX9HurlyBurly.fontColorFlag == 0) {
-                    SX9HurlyBurly.fontColorFlag = 1;
-                } else {
-                    SX9HurlyBurly.fontColorFlag = 0;
                 }
             }
             break;
