@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void Rectangular::setup(){
-	ofBackground(255);
+	//ofBackground(255);
 	ofSetFrameRate(50);
 	ofEnableSmoothing();
 	

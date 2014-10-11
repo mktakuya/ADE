@@ -20,14 +20,24 @@ void ofApp::update(){
             break;
             
         case 2:
+            break;
+            
+        case 3:
             if (sceneChangedFlag == true) {
+                ofBackground(0);
                 s02Rectangular.setup();
                 sceneChangedFlag = false;
             }
             s02Rectangular.update();
             break;
             
-        case 3:
+        case 4:
+            break;
+            
+        case 5:
+            break;
+            
+        case 6:
             if (sceneChangedFlag == true) {
                 s03Bubbles.setup();
                 sceneChangedFlag = false;
@@ -35,7 +45,7 @@ void ofApp::update(){
             s03Bubbles.update();
             break;
             
-        case 4:
+        case 7:
             if (sceneChangedFlag == true) {
                 ofFill();
                 s04Tile.setup();
@@ -44,7 +54,7 @@ void ofApp::update(){
             s04Tile.update();
             break;
             
-        case 5:
+        case 8:
             if (sceneChangedFlag == true) {
                 s05EnergyBliss.setup();
                 sceneChangedFlag = false;
@@ -52,25 +62,7 @@ void ofApp::update(){
             s05EnergyBliss.update();
             break;
             
-        // とりあえず
-        case 6:
-            if (sceneChangedFlag == true) {
-                sXXStripe.setup();
-                sceneChangedFlag = false;
-            }
-            sXXStripe.update();
-            break;
-            
-        // とりあえず
-        case 7:
-            if (sceneChangedFlag == true) {
-                sX1Rectfall.setup();
-                sceneChangedFlag = false;
-            }
-            sX1Rectfall.update();
-            break;
-            
-        case 8:
+        case 9:
             if (sceneChangedFlag == true){
                 sX2Hexagon.setup();
                 sceneChangedFlag = false;
@@ -78,7 +70,15 @@ void ofApp::update(){
             sX2Hexagon.update();
             break;
             
-        case 9:
+        case 10:
+            if (sceneChangedFlag == true) {
+                sXXStripe.setup();
+                sceneChangedFlag = false;
+            }
+            sXXStripe.update();
+            break;
+            
+        case 11:
             if (sceneChangedFlag == true) {
                 SX3LiveStage.setup();
                 sceneChangedFlag = false;
@@ -86,7 +86,15 @@ void ofApp::update(){
             SX3LiveStage.update();
             break;
             
-        case 10:
+        case 12:
+            if (sceneChangedFlag == true) {
+                sX1Rectfall.setup();
+                sceneChangedFlag = false;
+            }
+            sX1Rectfall.update();
+            break;
+            
+        case 13:
             if (sceneChangedFlag == true) {
                 SX4Arc.setup();
                 sceneChangedFlag = false;
@@ -94,7 +102,7 @@ void ofApp::update(){
             SX4Arc.update();
             break;
             
-        case 11:
+        case 14:
             if (sceneChangedFlag == true) {
                 SX5Visualizer.setup();
                 sceneChangedFlag = false;
@@ -102,7 +110,7 @@ void ofApp::update(){
             SX5Visualizer.update();
             break;
             
-        case 12:
+        case 15:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 SX6Ink.setup();
@@ -111,7 +119,7 @@ void ofApp::update(){
             SX6Ink.update();
             break;
             
-        case 13:
+        case 16:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX7Wave.setup();
@@ -120,7 +128,7 @@ void ofApp::update(){
             SX7Wave.update();
             break;
             
-        case 14:
+        case 17:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX8Pentagon.setup();
@@ -140,54 +148,66 @@ void ofApp::draw(){
             break;
             
         case 2:
-            s02Rectangular.draw();
+            ofBackground(255);
             break;
             
         case 3:
-            s03Bubbles.draw();
+            s02Rectangular.draw();
             break;
             
         case 4:
-            s04Tile.draw();
+            ofBackground(255);
             break;
             
         case 5:
-            s05EnergyBliss.draw();
+            ofBackground(0);
             break;
             
         case 6:
-            sXXStripe.draw();
+            s03Bubbles.draw();
             break;
             
         case 7:
-            sX1Rectfall.draw();
+            s04Tile.draw();
             break;
             
         case 8:
-            sX2Hexagon.draw();
+            s05EnergyBliss.draw();
             break;
             
         case 9:
-            SX3LiveStage.draw();
+            sX2Hexagon.draw();
             break;
             
         case 10:
-            SX4Arc.draw();
+            sXXStripe.draw();
             break;
             
         case 11:
-            SX5Visualizer.draw();
+            SX3LiveStage.draw();
             break;
             
         case 12:
-            SX6Ink.draw();
+            sX1Rectfall.draw();
             break;
             
         case 13:
-            SX7Wave.draw();
+            SX4Arc.draw();
             break;
             
         case 14:
+            SX5Visualizer.draw();
+            break;
+            
+        case 15:
+            SX6Ink.draw();
+            break;
+            
+        case 16:
+            SX7Wave.draw();
+            break;
+            
+        case 17:
             SX8Pentagon.draw();
             break;
     }
