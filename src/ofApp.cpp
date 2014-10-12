@@ -160,12 +160,21 @@ void ofApp::update(){
             break;
             
         case 22:
-            // ななめ半分
+            if (sceneChangedFlag == true) {
+                ofBackground(255);
+                ofSetCircleResolution(128);
+                ofNoFill();
+                SX7Wave.setup();
+                sceneChangedFlag = false;
+            }
+            SX7Wave.update();
             break;
             
         case 23:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
+                ofSetCircleResolution(22);
+                ofFill();
                 SX6Ink.setup();
                 sceneChangedFlag = false;
             }
@@ -309,7 +318,7 @@ void ofApp::draw(){
             break;
             
         case 22:
-            ofBackground(0, 0, 255);
+            SX7Wave.draw();
             break;
             
         case 23:
