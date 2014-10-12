@@ -2,9 +2,6 @@
 
 #include "ofMain.h"
 
-#define TILE_LINE 6
-#define TILE_COLUMN 10
-
 class Tile : public ofBaseApp{
 public:
     void setup();
@@ -22,6 +19,9 @@ public:
     void gotMessage(ofMessage msg);
     
     int frame;
+    
+    static const int TILE_LINE = 6;
+    static const int TILE_COLUMN = 10;
     
     int colorFlag[TILE_LINE][TILE_COLUMN];
     
