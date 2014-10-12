@@ -137,11 +137,18 @@ void ofApp::update(){
             break;
             
         case 18:
-            // HurlyBurly3
+            if (sceneChangedFlag == true) {
+                ofBackground(0);
+                ofSetCircleResolution(4);
+                SX12HurlyBurly3.setup();
+                sceneChangedFlag = false;
+            }
+            SX12HurlyBurly3.update();
             break;
             
         case 19:
             // Stripe2
+            ofSetCircleResolution(22);
             break;
             
         case 20:
@@ -286,7 +293,7 @@ void ofApp::draw(){
             break;
             
         case 18:
-            ofBackground(0, 0, 255);
+            SX12HurlyBurly3.draw();
             break;
             
         case 19:
