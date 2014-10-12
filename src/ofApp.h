@@ -20,6 +20,7 @@
 #include "Pentagon.h"
 #include "HurlyBurly1.h"
 #include "HurlyBurly2.h"
+#include "MonochromeTile.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -60,4 +61,5 @@ public:
     Pentagon SX8Pentagon;
     HurlyBurly1 SX9HurlyBurly1;
     HurlyBurly2 SX10HurlyBurly2;
+    MonochromeTile SX11MonochromeTile;
 };
