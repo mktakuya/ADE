@@ -24,6 +24,12 @@ void ofApp::update(){
             break;
             
         case 2:
+            if (sceneChangedFlag == true) {
+                ofBackground(0);
+                SX11MonochromeTile.setup();
+                sceneChangedFlag = false;
+            }
+            SX11MonochromeTile.update();
             break;
             
         case 3:
@@ -212,7 +218,7 @@ void ofApp::draw(){
             break;
             
         case 2:
-            ofBackground(255);
+            SX11MonochromeTile.draw();
             break;
             
         case 3:
