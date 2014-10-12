@@ -11,6 +11,7 @@
 		8F63597A1979796400B9F3AF /* Stripe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6359781979796400B9F3AF /* Stripe.cpp */; };
 		8F672CBC19EAB78B0002C674 /* MonochromeTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F672CBA19EAB78B0002C674 /* MonochromeTile.cpp */; };
 		8F6B7B5B197658F600E0C2CC /* Bubbles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B7B59197658F600E0C2CC /* Bubbles.cpp */; };
+		8F72FB1919EAE71400DFB4D6 /* HurlyBurly3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F72FB1719EAE71400DFB4D6 /* HurlyBurly3.cpp */; };
 		8F7435401973C860004DAC03 /* Intro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F74353E1973C860004DAC03 /* Intro.cpp */; };
 		8F7435581973DA20004DAC03 /* Rectangular.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F7435561973DA20004DAC03 /* Rectangular.cpp */; };
 		8F87D4CC19E84AA4002201B5 /* Visualizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D4CA19E84AA4002201B5 /* Visualizer.cpp */; };
@@ -84,6 +85,8 @@
 		8F672CBB19EAB78B0002C674 /* MonochromeTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonochromeTile.h; sourceTree = "<group>"; };
 		8F6B7B59197658F600E0C2CC /* Bubbles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bubbles.cpp; sourceTree = "<group>"; };
 		8F6B7B5A197658F600E0C2CC /* Bubbles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bubbles.h; sourceTree = "<group>"; };
+		8F72FB1719EAE71400DFB4D6 /* HurlyBurly3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HurlyBurly3.cpp; sourceTree = "<group>"; };
+		8F72FB1819EAE71400DFB4D6 /* HurlyBurly3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HurlyBurly3.h; sourceTree = "<group>"; };
 		8F74353E1973C860004DAC03 /* Intro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Intro.cpp; sourceTree = "<group>"; };
 		8F74353F1973C860004DAC03 /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
 		8F7435561973DA20004DAC03 /* Rectangular.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangular.cpp; sourceTree = "<group>"; };
@@ -231,6 +234,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8F72FB1719EAE71400DFB4D6 /* HurlyBurly3.cpp */,
+				8F72FB1819EAE71400DFB4D6 /* HurlyBurly3.h */,
 				8F672CBA19EAB78B0002C674 /* MonochromeTile.cpp */,
 				8F672CBB19EAB78B0002C674 /* MonochromeTile.h */,
 				8FB7AFB919E90A0100CEB850 /* HurlyBurly2.cpp */,
@@ -381,6 +386,7 @@
 				8F8F279D1993EFE100CDCB51 /* Hexagon.cpp in Sources */,
 				8F87D4E919E854D2002201B5 /* Pentagon.cpp in Sources */,
 				8F87D4DE19E85309002201B5 /* Wave.cpp in Sources */,
+				8F72FB1919EAE71400DFB4D6 /* HurlyBurly3.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				8F87D4D119E84D9F002201B5 /* Ink.cpp in Sources */,
 				8FF958A4198D1F6D00B84FE9 /* Rectfall.cpp in Sources */,
