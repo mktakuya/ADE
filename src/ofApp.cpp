@@ -42,9 +42,11 @@ void ofApp::update(){
             break;
             
         case 4:
+            // 真っ白
             break;
             
         case 5:
+            // 真っ黒
             break;
             
         case 6:
@@ -135,30 +137,35 @@ void ofApp::update(){
             break;
             
         case 18:
+            // HurlyBurly3
             break;
             
         case 19:
+            // Stripe2
             break;
             
         case 20:
+            // 左に向かって動くやつ
             break;
             
         case 21:
+            // やきもちBaby
             break;
             
         case 22:
+            // ななめ半分
             break;
             
         case 23:
-            break;
-            
-        case 24:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 SX6Ink.setup();
                 sceneChangedFlag = false;
             }
             SX6Ink.update();
+            break;
+            
+        case 24:
             break;
             
         case 25:
@@ -171,9 +178,6 @@ void ofApp::update(){
             break;
             
         case 28:
-            break;
-            
-        case 29:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 SX5Visualizer.setup();
@@ -302,11 +306,11 @@ void ofApp::draw(){
             break;
             
         case 23:
-            ofBackground(0, 0, 255);
+            SX6Ink.draw();
             break;
             
         case 24:
-            SX6Ink.draw();
+            ofBackground(0, 0, 255);
             break;
             
         case 25:
@@ -322,14 +326,11 @@ void ofApp::draw(){
             break;
             
         case 28:
-            ofBackground(0, 0, 255);
-            break;
-            
-        case 29:
             SX5Visualizer.draw();
             break;
             
-        case 30:
+        case 29:
+            break;
             
             
             
