@@ -22,7 +22,7 @@ void Intro::setup(){
 	if (rectmode == 1)
 		ofBackground(255);
 	else 
-		ofBackground(30);
+		ofBackground(0);
 }
 
 //--------------------------------------------------------------
@@ -31,7 +31,7 @@ void Intro::update(){
 		if (firstSequenceBuf > 6.0){
 			rectmode = 2; 
 			firstSequenceBuf = 0;
-			ofBackground(30);
+			ofBackground(0);
 		}
 		else{
 			if (nowrectcolor == 0){
