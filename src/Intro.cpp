@@ -22,7 +22,7 @@ void Intro::setup(){
 	if (rectmode == 1)
 		ofBackground(255);
 	else 
-		ofBackground(0);
+		ofBackground(30);
 }
 
 //--------------------------------------------------------------
@@ -31,7 +31,7 @@ void Intro::update(){
 		if (firstSequenceBuf > 6.0){
 			rectmode = 2; 
 			firstSequenceBuf = 0;
-			ofBackground(0);
+			ofBackground(30);
 		}
 		else{
 			if (nowrectcolor == 0){
@@ -68,8 +68,12 @@ void Intro::update(){
 		}
         
 		else{
-			for (int i = 0; i < 16; i++){
-				rectswitch[i] = ofRandom(0, 2);
+			for (int i = 0; i < 16; i++) 
+				rectswitch[i] = 0;
+			for (int i = 0; i < 6; i++){
+				int num = floor(ofRandom(16));
+				if (rectswitch[num] != 1)
+					rectswitch[num] = 1;
 			}
 			SecondSequenceBuf += 0.6;
 		}
@@ -78,7 +82,7 @@ void Intro::update(){
 
 //--------------------------------------------------------------
 void Intro::draw(){
-	float param[4][4] = { {0, 0, 0, 255}, {255, 255, 255, 127}, {233, 255, 0, 127}, {0, 195, 255, 127} };
+	float param[4][4] = { {30, 30, 30, 255}, {255, 255, 255, 127}, {233, 255, 0, 127}, {0, 195, 255, 127} };
 	float rectColor[4] = {75, 100, 161, 127};
 	if(rectmode == 1)
 		drawBigRect(param[nowrectcolor]);		
