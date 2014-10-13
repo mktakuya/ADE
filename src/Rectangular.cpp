@@ -2,97 +2,64 @@
 
 //--------------------------------------------------------------
 void Rectangular::setup(){
-	//ofBackground(255);
-	ofSetFrameRate(50);
+
+	ofBackground(30);
 	ofEnableSmoothing();
-	
-	sec = 0;
-	hide_black = false;
-	hide_white = false;
+
 	for(int i = 0; i < 11; i++) {
 		limits[i] = 0;
 	}
-    
+
 	for (int i = 0; i < NUM; i++) {
-		limits[i + 1] = 150 * i + 150;
-		xpoint[i] = ofRandom(limits[i] + 40, limits[i + 1] - 40);
-		height[i] = ofRandom(-10, -4);
-		ypoint[i] = ofGetHeight() - ofRandom(200, 500);
+		for (int j = 0; j < 2; j++) {
+			limits[i + 1] = 150 * i + 150;
+			xpoint[i] = ofRandom(limits[i] + 40, limits[i + 1] - 40);
+			height[i] = ofRandom(-30, -15);
+			ypoint[i][j] = ofGetHeight() - ofRandom(200, 500) + j * 400;
+		}
 	}
+
 }
 
 //--------------------------------------------------------------
 void Rectangular::update(){
-	sec += FPS;
-	if (sec >= 1.0) {
-		hide_white = true;
-		if (sec >= 2.0) {
-			hide_white = false;
-			if (sec >= 3.0) {
-				hide_black = true;
-				if (sec >= 4.0) {
-					hide_black = false;
-					if (sec >= 5.0) {
-                        hide_black = true;
-                        hide_white = true;
-                        if (sec >= 6.0) { 
-						 	hide_white = false;
-						 	hide_black = false; 
-						 	sec = 0;
-                        }
-					}
-				}
+
+	for (int i = 0; i < NUM; i++) {
+		for (int j = 0; j < 2; j++) {
+			if (ypoint[i][j] <= -80 - j * 400) {
+				ypoint[i][j] = ofGetHeight() + 30 * 6 + j * 400;
+				height[i] = ofRandom(- 30, -15);
+				if (j == 1)
+					xpoint[i] = ofRandom(limits[i], limits[i + 1]);
+			}
+			else {
+				ypoint[i][j] += height[i];
 			}
 		}
 	}
-    
-	for (int i = 0; i < NUM; i++) {
-		if (ypoint[i] <= -80) {
-			ypoint[i] = ofGetHeight() + 120;
-			height[i] = ofRandom(- 10, -4);
-			xpoint[i] = ofRandom(limits[i], limits[i + 1]);
-		}
-		else {
-			ypoint[i] += height[i];
-		}
-	}
+
 }
 
 //--------------------------------------------------------------
 void Rectangular::draw(){
-    float colorparam[3][3] = { {255, 0, 248}, {0, 85, 255}, {250, 255, 0} };
-    
+
+	ofColor color[3];
+	color[0].r = 255; color[1].r = 0; color[2].r = 250;
+	color[0].g = 0; color[1].g = 85; color[2].g = 255;
+	color[0].b = 248; color[1].b = 255; color[2].b = 0;
+
 	for (int i = 0; i < NUM ; i++) {
-		for (int j = 0; j < 4; j++) {
-			box.set(40);
-			box.setPosition(xpoint[i], ypoint[i] + j * -30, 0);
-			ofSetColor(colorparam[i%3][0], colorparam[i%3][1], colorparam[i%3][2]);
-			box.draw();
-			ofSetLineWidth(0.5);
-			ofSetColor(0);
-			box.drawWireframe();
+		for (int j = 0; j < 6; j++) {
+			for (int k = 0; k < 2; k++) {
+				box.set(40);
+				box.setPosition(xpoint[i], ypoint[i][k] + j * (-30), 0);
+				ofSetColor(color[i % 3]);
+				box.draw();
+				ofSetLineWidth(0.5);
+				ofSetColor(0);
+				box.drawWireframe();
+			}
 		}
 	}
-    
-	if (hide_white == true) {
-		ofSetColor(255);
-		ofFill();
-		ofBeginShape();
-        ofVertex(0, 0);
-        ofVertex(ofGetWidth() / 2.0 - 120, 0);
-        ofVertex(ofGetWidth() / 2.0 + 120, ofGetHeight());
-        ofVertex(0, ofGetHeight());
-		ofEndShape();
-	}
-    
-	if (hide_black == true) {
-		ofSetColor(0);
-		ofFill();
-		ofBeginShape();
-        ofVertex(ofGetWidth() / 2.0 - 120, 0);
-        ofVertex(ofGetWidth(), 0);
-        ofVertex(ofGetWidth(), ofGetHeight());
-        ofVertex(ofGetWidth() / 2.0 + 120, ofGetHeight());
-		ofEndShape();
-	}
+
 }
