@@ -8,19 +8,13 @@ void LiveStage::setup(){
 	ofBackground(120, 120, 120);
 
 	timer = 0;
+	colorType = 0;
 
 	for (int i = 0; i < PENLIGHT; i++) {
-		RightPenLight[i].x = ofRandom(50, ofGetWidth() * 0.3);
+		RightPenLight[i].x = ofRandom(0, ofGetWidth() * 0.3 - 75);
 		RightPenLight[i].y = ofRandom(ofGetHeight() * 0.6, ofGetHeight() - 50);
-		LeftPenLight[i].x = ofRandom(ofGetWidth() * 0.7, ofGetWidth() - 50);
+		LeftPenLight[i].x = ofRandom(ofGetWidth() * 0.7 + 75, ofGetWidth() - 25);
 		LeftPenLight[i].y = ofRandom(ofGetHeight() * 0.6, ofGetHeight() - 50);
-	}
-
-	for (int i = 0; i < CIRCLES; i++){
-		Particlepoint[i].x = ofRandom(ofGetWidth() * 0.45, ofGetWidth() * 0.5);
-		Particlepoint[i].y = ofRandom(DIAM, ofGetHeight() * 0.25);
-		Particlevec[i].x = ofRandom(-5, 5);
-		Particlevec[i].y = ofRandom(-6, 6);
 	}
 
 }
@@ -28,57 +22,67 @@ void LiveStage::setup(){
 //--------------------------------------------------------------
 void LiveStage::update(){
 
-	for (int i = 0; i < CIRCLES; i++) {
-		Particlepoint[i].x += Particlevec[i].x;
-		if (Particlepoint[i].x + DIAM >= ofGetWidth() * 0.7 || Particlepoint[i].x - DIAM <= ofGetWidth() * 0.3)
-			Particlevec[i].x *= -1;
-		Particlepoint[i].y += Particlevec[i].y;
-		if (Particlepoint[i].y + DIAM >= ofGetHeight() * 0.3 || Particlepoint[i].y - DIAM <= 0)
-			Particlevec[i].y *= -1;
-	}
-
-	if (timer >= 0.3) {
+	if (timer >= 0.2) {
 		for (int i = 0; i < PENLIGHT; i++) {
-			RightPenLight[i].x = ofRandom(50, ofGetWidth() * 0.3);
+			RightPenLight[i].x = ofRandom(0, ofGetWidth() * 0.3 - 75);
 			RightPenLight[i].y = ofRandom(ofGetHeight() * 0.6, ofGetHeight() - 50);
-			LeftPenLight[i].x = ofRandom(ofGetWidth() * 0.7, ofGetWidth() - 50);
+			LeftPenLight[i].x = ofRandom(ofGetWidth() * 0.7 + 75, ofGetWidth() - 25);
 			LeftPenLight[i].y = ofRandom(ofGetHeight() * 0.6, ofGetHeight() - 50);
 		}
+
+		if (colorType == 3) { 
+			colorType = 0;
+		}
+		else {
+			colorType++;
+		}
+		
 		timer = 0;
 	}
-	
+
 }
 
 //--------------------------------------------------------------
 void LiveStage::draw(){
+
+	float color[4][3] = {{127, 177, 201}, {255, 210, 92}, {202, 228, 79}, {255, 195, 89}};
+	ofColor stripeColor[4];
+	stripeColor[0].r = 127; stripeColor[0].g = 177; stripeColor[0].b = 201;
+	stripeColor[1].r = 255; stripeColor[1].g = 210; stripeColor[1].b = 92;
+	stripeColor[2].r = 202; stripeColor[2].g = 228; stripeColor[2].b = 79;
+	stripeColor[3].r = 255; stripeColor[3].g = 195; stripeColor[3].b = 89;
 
 	ofColor colors[3];
 	colors[0].r = 255; colors[0].g = 255; colors[0].b = 10;
 	colors[1].r = 20;	 colors[1].g = 246; colors[1].b = 255;
 	colors[2].r = 250; colors[2].g = 0; 	   colors[2].b = 191;
 
+
 	ofNoFill();
 		ofSetColor(255);
 		ofSetLineWidth(3);
-		ofRect(ofGetWidth() * 0.3, 0, ofGetWidth() * 0.4, ofGetHeight() * 0.3);
+		// ofRect(ofGetWidth() * 0.3, 0, ofGetWidth() * 0.4, ofGetHeight() * 0.3);
 		ofLine(0, ofGetHeight() * 0.45, ofGetWidth(), ofGetHeight() * 0.45);
 		ofBeginShape();
 			ofVertex(0, ofGetHeight() * 0.6);
-			ofVertex(ofGetWidth() * 0.4, ofGetHeight() * 0.6);
-			ofVertex(ofGetWidth() * 0.3, ofGetHeight());
+			ofVertex(ofGetWidth() * 0.4 - 100, ofGetHeight() * 0.6);
+			ofVertex(ofGetWidth() * 0.3 - 100, ofGetHeight());
 			ofVertex(0, ofGetHeight());
 		ofEndShape();
 		ofBeginShape();
 			ofVertex(ofGetWidth(), ofGetHeight() * 0.6);
-			ofVertex(ofGetWidth() * 0.6, ofGetHeight() * 0.6);
-			ofVertex(ofGetWidth() * 0.7, ofGetHeight());
+			ofVertex(ofGetWidth() * 0.6 + 100, ofGetHeight() * 0.6);
+			ofVertex(ofGetWidth() * 0.7 + 100, ofGetHeight());
 			ofVertex(ofGetWidth(), ofGetHeight());
 		ofEndShape();
 
 	ofFill();
-		for (int i = 0; i < CIRCLES; i++) {
-			ofSetColor(colors[i % 3]);
-			ofCircle(Particlepoint[i], DIAM);
+		for (int i = 0; i < ofGetWidth() * 0.1 * 0.2 - 1; i++){
+			if ((i + colorType)%2 != 0) 
+				ofSetColor(stripeColor[colorType]);
+			else 
+				ofSetColor(255);
+			ofRect(i * 20 + ofGetWidth() * 0.3, 0, 20, ofGetHeight() * 0.3);
 		}
 
 		for (int i = 0; i < PENLIGHT; i++) {
