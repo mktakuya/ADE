@@ -3,6 +3,7 @@
 #include "ofMain.h"
 
 // Scenes
+#include "OpeningTitle.h"
 #include "Intro.h"
 #include "Rectangular.h"
 #include "Bubbles.h"
@@ -43,6 +44,7 @@ public:
     bool sceneChangedFlag;
     
     // Scenes
+    OpeningTitle S00OpeningTitle;
     Intro s01Intro;
     Rectangular s02Rectangular;
     Bubbles s03Bubbles;

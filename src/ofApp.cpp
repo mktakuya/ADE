@@ -6,6 +6,10 @@ void ofApp::setup(){
     ofSetFullscreen(true);
     ofHideCursor();
     sceneChangedFlag = false;
+    
+    S00OpeningTitle.setup();
+    mouseX = ofGetWidth() / 2;
+    mouseY = ofGetHeight();
 }
 
 //--------------------------------------------------------------
@@ -13,6 +17,9 @@ void ofApp::update(){
     // update scenes
     switch (sceneNumber) {
         case 0:
+            S00OpeningTitle.mouseX = mouseX;
+            S00OpeningTitle.mouseY = mouseY;
+            S00OpeningTitle.update();
             break;
             
         case 1:
@@ -230,7 +237,7 @@ void ofApp::draw(){
     // draw scenes;
     switch (sceneNumber) {
         case 0:
-            ofBackground(testColor, testColor, testColor);
+            S00OpeningTitle.draw();
             break;
             
         case 1:
@@ -402,11 +409,12 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    
+    S00OpeningTitle.grow = true;
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
+    S00OpeningTitle.grow = false;
     
 }
 
