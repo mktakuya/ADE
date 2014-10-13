@@ -54,28 +54,28 @@ void EnergyBliss::draw(){
 
 	 ofSetColor(255, 255, 255);
 
-	if (2 <= times) {
-		lyrics[0].draw(10, 10);
-		if (3 <= times) {
-			height = 10 + lyrics[0].height;
-			lyrics[1].draw(10, height);
-			if (4 <= times) {
-				width = 10 + lyrics[1].width;
-				lyrics[2].draw(width - 10, height);
-				if (5 <= times) {
-					width += lyrics[2].width;
-					lyrics[3].draw(width - 20, height + 1);
-					if (6 <= times) {
-						width += lyrics[3].width;
-						lyrics[4].draw(width - 40, height - 5);
-						if (7	 <= times) {
-							times = 0;
-						}
-					}
-				}
-			}
-		}
-	}
+	// if (2 <= times) {
+	// 	lyrics[0].draw(10, 10);
+	// 	if (3 <= times) {
+	// 		height = 10 + lyrics[0].height;
+	// 		lyrics[1].draw(10, height);
+	// 		if (4 <= times) {
+	// 			width = 10 + lyrics[1].width;
+	// 			lyrics[2].draw(width - 10, height);
+	// 			if (5 <= times) {
+	// 				width += lyrics[2].width;
+	// 				lyrics[3].draw(width - 20, height + 1);
+	// 				if (6 <= times) {
+	// 					width += lyrics[3].width;
+	// 					lyrics[4].draw(width - 40, height - 5);
+	// 					if (7	 <= times) {
+	// 						times = 0;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
  	ofSleepMillis(clocks);
 
 }
