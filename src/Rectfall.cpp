@@ -2,8 +2,6 @@
 
 //--------------------------------------------------------------
 void Rectfall::setup(){
-
-	ofBackground(30);
 	ofEnableSmoothing();
 
 	fall = false;
