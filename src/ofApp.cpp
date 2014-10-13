@@ -113,6 +113,7 @@ void ofApp::update(){
             
         case 14:
             if (sceneChangedFlag == true) {
+                ofBackground(0);
                 sX1Rectfall.setup();
                 sceneChangedFlag = false;
             }
