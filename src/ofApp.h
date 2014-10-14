@@ -25,6 +25,7 @@
 #include "MonochromeTile.h"
 #include "HurlyBurly4.h"
 #include "HurlyBurly5.h"
+#include "Tricle.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -70,4 +71,5 @@ public:
     HurlyBurly4 SX13HurlyBurly4;
     HurlyBurly5 SX14HurlyBurly5;
     MonochromeTile SX11MonochromeTile;
+    Tricle SX15Tricle;
 };

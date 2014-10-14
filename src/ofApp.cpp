@@ -160,7 +160,13 @@ void ofApp::update(){
             break;
             
         case 21:
-            // やきもちBaby
+            if (sceneChangedFlag == true) {
+                ofBackground(30);
+                ofSetCircleResolution(3);
+                SX15Tricle.setup();
+                sceneChangedFlag = false;
+            }
+            SX15Tricle.update();
             break;
             
         case 22:
@@ -330,7 +336,7 @@ void ofApp::draw(){
             break;
             
         case 21:
-            ofBackground(0, 0, 255);
+            SX15Tricle.draw();
             break;
             
         case 22:
