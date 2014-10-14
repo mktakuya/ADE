@@ -209,9 +209,11 @@ void ofApp::update(){
             break;
             
         case 26:
+            // 太めストライプ
             break;
             
         case 27:
+            // トライフォース
             break;
             
         case 28:
@@ -223,10 +225,36 @@ void ofApp::update(){
             SX5Visualizer.update();
             break;
             
-        case 50:
+        case 29:
+            // カラフルチカチカ
             break;
             
-        case 51:
+        case 30:
+            // 9の2番め
+            break;
+            
+        case 31:
+            // スポットライト
+            
+        case 32:
+            // HurlyBurly埋め尽くし
+            
+        case 33:
+            // 白黒太めストライプ
+            
+        case 34:
+            // 右に移動
+            
+        case 35:
+            // エンドロール
+            
+        case 36:
+            // 真っ白
+            
+        case 37:
+            // 黒三角形で埋め尽くし→END
+            
+        case 50:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX7Wave.setup();
@@ -235,7 +263,7 @@ void ofApp::update(){
             SX7Wave.update();
             break;
             
-        case 52:
+        case 51:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX8Pentagon.setup();
@@ -367,8 +395,44 @@ void ofApp::draw(){
             break;
             
         case 29:
+            ofBackground(0, 0, 255);
             break;
             
+        case 30:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 31:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 32:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 33:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 34:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 35:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 36:
+            ofBackground(255);
+            break;
+            
+        case 37:
+            ofBackground(0, 0, 255);
+            break;
+            
+        case 38:
+            ofBackground(0);
+            break;
             
             
         case 50:
