@@ -33,30 +33,21 @@ void ofApp::update(){
         case 2:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
-                SX11MonochromeTile.setup();
-                sceneChangedFlag = false;
-            }
-            SX11MonochromeTile.update();
-            break;
-            
-        case 3:
-            if (sceneChangedFlag == true) {
-                ofBackground(0);
                 s02Rectangular.setup();
                 sceneChangedFlag = false;
             }
             s02Rectangular.update();
             break;
             
-        case 4:
+        case 3:
             // 真っ白
             break;
             
-        case 5:
+        case 4:
             // 真っ黒
             break;
             
-        case 6:
+        case 5:
             if (sceneChangedFlag == true) {
                 s03Bubbles.setup();
                 sceneChangedFlag = false;
@@ -64,7 +55,7 @@ void ofApp::update(){
             s03Bubbles.update();
             break;
             
-        case 7:
+        case 6:
             if (sceneChangedFlag == true) {
                 ofFill();
                 s04Tile.setup();
@@ -73,7 +64,7 @@ void ofApp::update(){
             s04Tile.update();
             break;
             
-        case 8:
+        case 7:
             if (sceneChangedFlag == true) {
                 s05EnergyBliss.setup();
                 sceneChangedFlag = false;
@@ -81,7 +72,7 @@ void ofApp::update(){
             s05EnergyBliss.update();
             break;
             
-        case 9:
+        case 8:
             if (sceneChangedFlag == true){
                 sX2Hexagon.setup();
                 sceneChangedFlag = false;
@@ -89,7 +80,7 @@ void ofApp::update(){
             sX2Hexagon.update();
             break;
             
-        case 10:
+        case 9:
             if (sceneChangedFlag == true) {
                 sXXStripe.setup();
                 sceneChangedFlag = false;
@@ -97,7 +88,7 @@ void ofApp::update(){
             sXXStripe.update();
             break;
             
-        case 11:
+        case 10:
             if (sceneChangedFlag == true) {
                 SX3LiveStage.setup();
                 sceneChangedFlag = false;
@@ -105,13 +96,13 @@ void ofApp::update(){
             SX3LiveStage.update();
             break;
             
+        case 11:
+            break;
+            
         case 12:
             break;
             
         case 13:
-            break;
-            
-        case 14:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 sX1Rectfall.setup();
@@ -120,7 +111,7 @@ void ofApp::update(){
             sX1Rectfall.update();
             break;
             
-        case 15:
+        case 14:
             if (sceneChangedFlag == true) {
                 SX4Arc.setup();
                 sceneChangedFlag = false;
@@ -128,7 +119,7 @@ void ofApp::update(){
             SX4Arc.update();
             break;
             
-        case 16:
+        case 15:
             if (sceneChangedFlag == true) {
                 SX9HurlyBurly1.setup();
                 sceneChangedFlag = false;
@@ -136,7 +127,7 @@ void ofApp::update(){
             SX9HurlyBurly1.update();
             break;
             
-        case 17:
+        case 16:
             if (sceneChangedFlag == true) {
                 SX10HurlyBurly2.setup();
                 sceneChangedFlag = false;
@@ -144,7 +135,7 @@ void ofApp::update(){
             SX10HurlyBurly2.update();
             break;
             
-        case 18:
+        case 17:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 ofSetCircleResolution(4);
@@ -154,20 +145,20 @@ void ofApp::update(){
             SX12HurlyBurly3.update();
             break;
             
-        case 19:
+        case 18:
             // Stripe2
             ofSetCircleResolution(22);
             break;
             
-        case 20:
+        case 19:
             // 左に向かって動くやつ
             break;
             
-        case 21:
+        case 20:
             // やきもちBaby
             break;
             
-        case 22:
+        case 21:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 ofSetCircleResolution(128);
@@ -178,7 +169,7 @@ void ofApp::update(){
             SX7Wave.update();
             break;
             
-        case 23:
+        case 22:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 ofSetCircleResolution(22);
@@ -189,7 +180,7 @@ void ofApp::update(){
             SX6Ink.update();
             break;
             
-        case 24:
+        case 23:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX13HurlyBurly4.setup();
@@ -198,23 +189,22 @@ void ofApp::update(){
             SX13HurlyBurly4.update();
             break;
             
-        case 25:
-            /*
+        case 24:
             if (sceneChangedFlag == true) {
-                HurlyBurly5.setup();
+                ofBackground(0);
+                SX14HurlyBurly5.setup();
                 sceneChangedFlag = false;
             }
-            HurlyBurly5.update();
-             */
+            SX14HurlyBurly5.update();
+            break;
+            
+        case 25:
             break;
             
         case 26:
             break;
             
         case 27:
-            break;
-            
-        case 28:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 SX5Visualizer.setup();
@@ -259,43 +249,43 @@ void ofApp::draw(){
             break;
             
         case 2:
-            SX11MonochromeTile.draw();
-            break;
-            
-        case 3:
             s02Rectangular.draw();
             break;
             
-        case 4:
+        case 3:
             ofBackground(255);
             break;
             
-        case 5:
+        case 4:
             ofBackground(0);
             break;
             
-        case 6:
+        case 5:
             s03Bubbles.draw();
             break;
             
-        case 7:
+        case 6:
             s04Tile.draw();
             break;
             
-        case 8:
+        case 7:
             s05EnergyBliss.draw();
             break;
             
-        case 9:
+        case 8:
             sX2Hexagon.draw();
             break;
             
-        case 10:
+        case 9:
             sXXStripe.draw();
             break;
             
-        case 11:
+        case 10:
             SX3LiveStage.draw();
+            break;
+            
+        case 11:
+            ofBackground(0, 0, 255);
             break;
             
         case 12:
@@ -303,27 +293,27 @@ void ofApp::draw(){
             break;
             
         case 13:
-            ofBackground(0, 0, 255);
-            break;
-            
-        case 14:
             sX1Rectfall.draw();
             break;
             
-        case 15:
+        case 14:
             SX4Arc.draw();
             break;
             
-        case 16:
+        case 15:
             SX9HurlyBurly1.draw();
             break;
             
-        case 17:
+        case 16:
             SX10HurlyBurly2.draw();
             break;
             
-        case 18:
+        case 17:
             SX12HurlyBurly3.draw();
+            break;
+            
+        case 18:
+            ofBackground(0, 0, 255);
             break;
             
         case 19:
@@ -335,19 +325,19 @@ void ofApp::draw(){
             break;
             
         case 21:
-            ofBackground(0, 0, 255);
-            break;
-            
-        case 22:
             SX7Wave.draw();
             break;
             
-        case 23:
+        case 22:
             SX6Ink.draw();
             break;
             
-        case 24:
+        case 23:
             SX13HurlyBurly4.draw();
+            break;
+            
+        case 24:
+            SX14HurlyBurly5.draw();
             break;
             
         case 25:
@@ -359,14 +349,10 @@ void ofApp::draw(){
             break;
             
         case 27:
-            ofBackground(0, 0, 255);
-            break;
-            
-        case 28:
             SX5Visualizer.draw();
             break;
             
-        case 29:
+        case 28:
             break;
             
             
