@@ -17,7 +17,7 @@ void Arc::setup(){
 //--------------------------------------------------------------
 void Arc::update(){
 	for (int i = 0; i < max_arc; i++) {
-		rad[i]++;
+		rad[i]+=0.3;
 		if (rad[i] >= 360) {
 			rad[i] = 0;
 		}
