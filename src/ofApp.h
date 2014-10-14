@@ -23,6 +23,7 @@
 #include "HurlyBurly2.h"
 #include "HurlyBurly3.h"
 #include "MonochromeTile.h"
+#include "HurlyBurly4.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -65,5 +66,6 @@ public:
     HurlyBurly1 SX9HurlyBurly1;
     HurlyBurly2 SX10HurlyBurly2;
     HurlyBurly3 SX12HurlyBurly3;
+    HurlyBurly4 SX13HurlyBurly4;
     MonochromeTile SX11MonochromeTile;
 };

@@ -190,9 +190,22 @@ void ofApp::update(){
             break;
             
         case 24:
+            if (sceneChangedFlag == true) {
+                ofBackground(255);
+                SX13HurlyBurly4.setup();
+                sceneChangedFlag = false;
+            }
+            SX13HurlyBurly4.update();
             break;
             
         case 25:
+            /*
+            if (sceneChangedFlag == true) {
+                HurlyBurly5.setup();
+                sceneChangedFlag = false;
+            }
+            HurlyBurly5.update();
+             */
             break;
             
         case 26:
@@ -334,7 +347,7 @@ void ofApp::draw(){
             break;
             
         case 24:
-            ofBackground(0, 0, 255);
+            SX13HurlyBurly4.draw();
             break;
             
         case 25:
