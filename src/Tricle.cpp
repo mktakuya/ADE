@@ -2,10 +2,6 @@
 
 //--------------------------------------------------------------
 void Tricle::setup(){
-
-	ofSetCircleResolution(3);
-	ofEnableSmoothing();
-
 	radian = 0;
 	diam = 1;
 	renge = 70;
@@ -18,7 +14,6 @@ void Tricle::setup(){
 
 //--------------------------------------------------------------
 void Tricle::update(){
-
 	// Circle radius update
 	renge += diam;
 	if (renge >= 200 || renge <= 70)
@@ -52,7 +47,6 @@ void Tricle::update(){
 
 //--------------------------------------------------------------
 void Tricle::draw(){
-
 	for (int i = 0; i < 3; i++)	{
 		ofPushMatrix();
 		ofTranslate(point[i]);
@@ -70,5 +64,4 @@ void Tricle::draw(){
 		}
 		ofPopMatrix();
 	}
-
 }
