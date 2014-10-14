@@ -22,6 +22,7 @@
 		8F9C34A219ED1BFA00F1E31F /* HurlyBurly4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C34A019ED1BFA00F1E31F /* HurlyBurly4.cpp */; };
 		8F9C34A519ED1D7500F1E31F /* HurlyBurly5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C34A319ED1D7500F1E31F /* HurlyBurly5.cpp */; };
 		8F9C34B419ED623C00F1E31F /* Tricle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C34B219ED623C00F1E31F /* Tricle.cpp */; };
+		8FA1E0DB19ED6E16003D59C8 /* ChikaChika.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA1E0D919ED6E16003D59C8 /* ChikaChika.cpp */; };
 		8FA6E3851976667000427216 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6E3831976667000427216 /* Tile.cpp */; };
 		8FA6E38E19766FA000427216 /* EnergyBliss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6E38C19766FA000427216 /* EnergyBliss.cpp */; };
 		8FB7AFB819E900CE00CEB850 /* HurlyBurly1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB7AFB619E900CE00CEB850 /* HurlyBurly1.cpp */; };
@@ -111,6 +112,8 @@
 		8F9C34A419ED1D7500F1E31F /* HurlyBurly5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HurlyBurly5.h; sourceTree = "<group>"; };
 		8F9C34B219ED623C00F1E31F /* Tricle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tricle.cpp; sourceTree = "<group>"; };
 		8F9C34B319ED623C00F1E31F /* Tricle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tricle.h; sourceTree = "<group>"; };
+		8FA1E0D919ED6E16003D59C8 /* ChikaChika.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChikaChika.cpp; sourceTree = "<group>"; };
+		8FA1E0DA19ED6E16003D59C8 /* ChikaChika.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChikaChika.h; sourceTree = "<group>"; };
 		8FA6E3831976667000427216 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
 		8FA6E3841976667000427216 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		8FA6E38C19766FA000427216 /* EnergyBliss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnergyBliss.cpp; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8FA1E0D919ED6E16003D59C8 /* ChikaChika.cpp */,
+				8FA1E0DA19ED6E16003D59C8 /* ChikaChika.h */,
 				8F9C34B219ED623C00F1E31F /* Tricle.cpp */,
 				8F9C34B319ED623C00F1E31F /* Tricle.h */,
 				8F9C34A319ED1D7500F1E31F /* HurlyBurly5.cpp */,
@@ -415,6 +420,7 @@
 				8FF958A4198D1F6D00B84FE9 /* Rectfall.cpp in Sources */,
 				8F87D4CC19E84AA4002201B5 /* Visualizer.cpp in Sources */,
 				8FA6E38E19766FA000427216 /* EnergyBliss.cpp in Sources */,
+				8FA1E0DB19ED6E16003D59C8 /* ChikaChika.cpp in Sources */,
 				8F672CBC19EAB78B0002C674 /* MonochromeTile.cpp in Sources */,
 				8F9C34A519ED1D7500F1E31F /* HurlyBurly5.cpp in Sources */,
 			);

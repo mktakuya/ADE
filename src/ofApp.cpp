@@ -226,7 +226,11 @@ void ofApp::update(){
             break;
             
         case 29:
-            // カラフルチカチカ
+            if (sceneChangedFlag == true) {
+                SX16ChikaChika.setup();
+                sceneChangedFlag = false;
+            }
+            SX16ChikaChika.update();
             break;
             
         case 30:
@@ -395,7 +399,7 @@ void ofApp::draw(){
             break;
             
         case 29:
-            ofBackground(0, 0, 255);
+            SX16ChikaChika.draw();
             break;
             
         case 30:
