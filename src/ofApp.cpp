@@ -155,7 +155,14 @@ void ofApp::update(){
             break;
             
         case 20:
-            // 左に向かって動くやつ
+            if (sceneChangedFlag == true) {
+            	ofEnableSmoothing();
+            	ofSetCircleResolution(4);
+            	ofBackground(0);
+                SX21Nexus.setup();
+                sceneChangedFlag = false;
+            }
+            SX21Nexus.update();
             break;
             
         case 21:
@@ -391,7 +398,7 @@ void ofApp::draw(){
             break;
             
         case 20:
-            ofBackground(0, 0, 255);
+            SX21Nexus.draw();
             break;
             
         case 21:
