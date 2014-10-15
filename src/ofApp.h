@@ -31,6 +31,7 @@
 #include "PizzaStripe.h"
 #include "MonochromeStripe.h"
 #include "MonochromeStripeMove.h"
+#include "Nexus.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -82,4 +83,5 @@ public:
     PizzaStripe SX18PizzaStripe;
     MonochromeStripe SX19MonochromeStripe;
     MonochromeStripeMove SX20MonochromeStripeMove;
+    Nexus SX21Nexus;
 };

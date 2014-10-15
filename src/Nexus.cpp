@@ -2,11 +2,6 @@
 
 //--------------------------------------------------------------
 void Nexus::setup(){
-
-	ofEnableSmoothing();
-	ofSetCircleResolution(4);
-	ofBackground(0);
-
 	for (int i = 0; i < 50; i++) {
 		position[i].set(ofGetWidth() * 1.5 - (25 - i) * 100, ofGetHeight() / 2.0);
 	}
