@@ -3,9 +3,9 @@
 //--------------------------------------------------------------
 void MonochromeStripe::setup(){
     frame = 0;
-    width = 288;
+    width = 240;
     
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 6; i++) {
         if (i % 2 == 0) {
             colorFlag[i] = true;
         } else {
@@ -18,7 +18,7 @@ void MonochromeStripe::setup(){
 void MonochromeStripe::update(){
     frame++;
     if (frame % 30 == 0) {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             if (colorFlag[i] == true) {
                 colorFlag[i] = false;
             } else {
@@ -30,7 +30,7 @@ void MonochromeStripe::update(){
 
 //--------------------------------------------------------------
 void MonochromeStripe::draw(){
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 6; i++) {
         if (colorFlag[i] == true) {
             ofSetColor(0);
         } else {

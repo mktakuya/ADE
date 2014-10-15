@@ -11,7 +11,7 @@ public:
     
     int frame;
     
-    bool colorFlag[5];
+    bool colorFlag[6];
     
     int width;
 };

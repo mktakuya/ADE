@@ -3,10 +3,10 @@
 //--------------------------------------------------------------
 void PizzaStripe::setup(){
     frame = 0;
-    width = 288;
+    width = 240;
     colorFlag = -1;
     
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 6; i++) {
         if (colorFlag != -1) {
             prevColorFlag = colorFlag;
         }
@@ -45,7 +45,7 @@ void PizzaStripe::setup(){
 void PizzaStripe::update(){
     frame++;
     if (frame % 30 == 0) {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             if (colorFlag != -1) {
                 prevColorFlag = colorFlag;
             }
@@ -83,7 +83,7 @@ void PizzaStripe::update(){
 
 //--------------------------------------------------------------
 void PizzaStripe::draw(){
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 6; i++) {
         ofSetColor(bandR[i], bandG[i], bandB[i]);
         ofRect(width * i, 0, width, ofGetHeight());
     }

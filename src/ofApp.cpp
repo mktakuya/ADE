@@ -271,7 +271,11 @@ void ofApp::update(){
             break;
             
         case 34:
-            // 右に移動
+            if (sceneChangedFlag == true) {
+                SX20MonochromeStripeMove.setup();
+                sceneChangedFlag = false;
+            }
+            SX20MonochromeStripeMove.update();
             
         case 35:
             // エンドロール
@@ -443,7 +447,7 @@ void ofApp::draw(){
             break;
             
         case 34:
-            ofBackground(0, 0, 255);
+            SX20MonochromeStripeMove.draw();
             break;
             
         case 35:

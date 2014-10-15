@@ -30,6 +30,7 @@
 #include "Triangle.h"
 #include "PizzaStripe.h"
 #include "MonochromeStripe.h"
+#include "MonochromeStripeMove.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -80,4 +81,5 @@ public:
     Triangle SX17Triangle;
     PizzaStripe SX18PizzaStripe;
     MonochromeStripe SX19MonochromeStripe;
+    MonochromeStripeMove SX20MonochromeStripeMove;
 };

@@ -14,9 +14,9 @@ public:
     int prevColorFlag;
     int colorFlag;
     
-    int bandR[5];
-    int bandG[5];
-    int bandB[5];
+    int bandR[6];
+    int bandG[6];
+    int bandB[6];
     
     int width;
 };
