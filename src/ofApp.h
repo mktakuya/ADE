@@ -29,6 +29,7 @@
 #include "ChikaChika.h"
 #include "Triangle.h"
 #include "PizzaStripe.h"
+#include "MonochromeStripe.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -78,4 +79,5 @@ public:
     ChikaChika SX16ChikaChika;
     Triangle SX17Triangle;
     PizzaStripe SX18PizzaStripe;
+    MonochromeStripe SX19MonochromeStripe;
 };

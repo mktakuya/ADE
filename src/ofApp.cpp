@@ -255,7 +255,14 @@ void ofApp::update(){
             // HurlyBurly埋め尽くし
             
         case 33:
-            // 白黒太めストライプ
+            if (sceneChangedFlag == true) {
+                ofBackground(0);
+                ofFill();
+                SX19MonochromeStripe.setup();
+                sceneChangedFlag = false;
+            }
+            SX19MonochromeStripe.update();
+            break;
             
         case 34:
             // 右に移動
@@ -426,7 +433,7 @@ void ofApp::draw(){
             break;
             
         case 33:
-            ofBackground(0, 0, 255);
+            SX19MonochromeStripe.draw();
             break;
             
         case 34:

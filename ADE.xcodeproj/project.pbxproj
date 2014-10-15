@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F1030E719EEC41700E4B113 /* PizzaStripe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1030E519EEC41700E4B113 /* PizzaStripe.cpp */; };
+		8F436BF819EEC8FE00EAD88A /* MonochromeStripe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F436BF619EEC8FE00EAD88A /* MonochromeStripe.cpp */; };
 		8F43A52A19A33B7900F6EFCC /* LiveStage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F43A52819A33B7900F6EFCC /* LiveStage.cpp */; };
 		8F63597A1979796400B9F3AF /* Stripe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6359781979796400B9F3AF /* Stripe.cpp */; };
 		8F672CBC19EAB78B0002C674 /* MonochromeTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F672CBA19EAB78B0002C674 /* MonochromeTile.cpp */; };
@@ -86,6 +87,8 @@
 /* Begin PBXFileReference section */
 		8F1030E519EEC41700E4B113 /* PizzaStripe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PizzaStripe.cpp; sourceTree = "<group>"; };
 		8F1030E619EEC41700E4B113 /* PizzaStripe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PizzaStripe.h; sourceTree = "<group>"; };
+		8F436BF619EEC8FE00EAD88A /* MonochromeStripe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonochromeStripe.cpp; sourceTree = "<group>"; };
+		8F436BF719EEC8FE00EAD88A /* MonochromeStripe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonochromeStripe.h; sourceTree = "<group>"; };
 		8F43A52819A33B7900F6EFCC /* LiveStage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LiveStage.cpp; sourceTree = "<group>"; };
 		8F43A52919A33B7900F6EFCC /* LiveStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveStage.h; sourceTree = "<group>"; };
 		8F6359781979796400B9F3AF /* Stripe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stripe.cpp; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8F436BF619EEC8FE00EAD88A /* MonochromeStripe.cpp */,
+				8F436BF719EEC8FE00EAD88A /* MonochromeStripe.h */,
 				8F1030E519EEC41700E4B113 /* PizzaStripe.cpp */,
 				8F1030E619EEC41700E4B113 /* PizzaStripe.h */,
 				8FC1D60819EEBBD500C22F58 /* Triangle.cpp */,
@@ -423,6 +428,7 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				8F8F279D1993EFE100CDCB51 /* Hexagon.cpp in Sources */,
 				8F87D4E919E854D2002201B5 /* Pentagon.cpp in Sources */,
+				8F436BF819EEC8FE00EAD88A /* MonochromeStripe.cpp in Sources */,
 				8F9C34B419ED623C00F1E31F /* Tricle.cpp in Sources */,
 				8F87D4DE19E85309002201B5 /* Wave.cpp in Sources */,
 				8F72FB1919EAE71400DFB4D6 /* HurlyBurly3.cpp in Sources */,
