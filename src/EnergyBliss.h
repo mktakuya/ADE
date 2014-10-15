@@ -4,20 +4,20 @@
 
 class EnergyBliss : public ofBaseApp{
 
-	public:
-		void setup();
-		void update();
-		void draw();
+    public:
+        void setup();
+        void update();
+        void draw();
 
-		int clocks;
-		int piece;
+        int clocks;
+        int piece;
 
-		float randx[35];
-		float randy[35];
-		float randz[35];
-		float pNoise[35];
-		int times;
+        float randx[35];
+        float randy[35];
+        float randz[35];
+        float pNoise[35];
+        int times;
 
-		ofImage lyrics[5];
-		
+        ofImage lyrics[5];
+        
 };

@@ -42,7 +42,7 @@ void EnergyBliss::update(){
 //--------------------------------------------------------------
 void EnergyBliss::draw(){
 
-	float width = 0, height = 0;
+	float width = 10, height = 5;
 
 	for(int i = 0; i < piece; i++){
 		for(int j = 1; j <= pNoise[i]; j++){
@@ -55,20 +55,21 @@ void EnergyBliss::draw(){
 	 ofSetColor(255, 255, 255);
 
 	if (2 <= times) {
-		lyrics[0].draw(10, 10);
-		if (3 <= times) {
-			height = 10 + lyrics[0].height;
-			lyrics[1].draw(10, height);
-			if (4 <= times) {
-				width = 10 + lyrics[1].width;
-				lyrics[2].draw(width - 10, height);
-				if (5 <= times) {
-					width += lyrics[2].width;
-					lyrics[3].draw(width - 20, height + 1);
-					if (6 <= times) {
+		lyrics[0].draw(height, width);
+		if (7 <= times) {
+			height += 10 + lyrics[0].height;
+			lyrics[1].draw(width, height);
+			if (12 <= times) {
+				height += 10 + lyrics[1].height;
+				lyrics[2].draw(width, height);
+				if (18 <= times) {
+					width += 150 + lyrics[1].width;
+					height -= lyrics[2].height + 10;
+					lyrics[3].draw(width, height - 80, 200, 225);
+					if (20 <= times) {
 						width += lyrics[3].width;
-						lyrics[4].draw(width - 40, height - 5);
-						if (7	 <= times) {
+						lyrics[4].draw(width + 70, height);
+						if (21 <= times) {
 							times = 0;
 						}
 					}
