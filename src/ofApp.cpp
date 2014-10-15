@@ -278,25 +278,19 @@ void ofApp::update(){
             
         case 33:
             if (sceneChangedFlag == true) {
-                ofBackground(0);
+                ofBackground(255);
                 ofFill();
-                SX19MonochromeStripe.setup();
-                sceneChangedFlag = false;
-            }
-            SX19MonochromeStripe.update();
-            break;
-            
-        case 34:
-            if (sceneChangedFlag == true) {
+                SX13HurlyBurly4.setup();
                 SX20MonochromeStripeMove.setup();
                 sceneChangedFlag = false;
             }
+            SX13HurlyBurly4.update();
             SX20MonochromeStripeMove.update();
             
-        case 35:
+        case 34:
             // エンドロール
             
-        case 36:
+        case 35:
             // 真っ白
             
         case 37:
@@ -459,26 +453,23 @@ void ofApp::draw(){
             break;
             
         case 33:
-            SX19MonochromeStripe.draw();
-            break;
-            
-        case 34:
+            SX13HurlyBurly4.draw();
             SX20MonochromeStripeMove.draw();
             break;
             
-        case 35:
+        case 34:
             ofBackground(0, 0, 255);
             break;
             
-        case 36:
+        case 35:
             ofBackground(255);
             break;
             
-        case 37:
+        case 36:
             ofBackground(0, 0, 255);
             break;
             
-        case 38:
+        case 37:
             ofBackground(0);
             break;
             

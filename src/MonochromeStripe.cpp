@@ -34,7 +34,7 @@ void MonochromeStripe::draw(){
         if (colorFlag[i] == true) {
             ofSetColor(0);
         } else {
-            ofSetColor(255);
+            ofSetColor(255, 255, 255, 0);
         }
         ofRect(width * i, 0, width, ofGetHeight());
     }
