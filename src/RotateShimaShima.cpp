@@ -2,20 +2,13 @@
 
 //--------------------------------------------------------------
 void RotateShimaShima::setup(){
-
-	ofEnableSmoothing();
-	ofBackground(255);
-	ofSetFrameRate(50);
-
 	rotateFlag = true;
 	degree = 0;
 	colorType = 0;
-
 }
 
 //--------------------------------------------------------------
 void RotateShimaShima::update(){
-
 	if (degree >= 180) {
 		if(colorType == 3) {
 			colorType = 0;
