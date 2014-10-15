@@ -252,7 +252,13 @@ void ofApp::update(){
             // スポットライト
             
         case 32:
-            // HurlyBurly埋め尽くし
+            if (sceneChangedFlag == true) {
+                ofBackground(255);
+                SX13HurlyBurly4.setup();
+                sceneChangedFlag = false;
+            }
+            SX13HurlyBurly4.update();
+            break;
             
         case 33:
             if (sceneChangedFlag == true) {
@@ -429,7 +435,7 @@ void ofApp::draw(){
             break;
             
         case 32:
-            ofBackground(0, 0, 255);
+            SX13HurlyBurly4.draw();
             break;
             
         case 33:
