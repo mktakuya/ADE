@@ -12,7 +12,7 @@ void HurlyBurly5::setup(){
 void HurlyBurly5::update(){
     frame++;
     
-    if (frame % 15 == 0){
+    if (frame % 7 == 0){
         colorFlag = !colorFlag;
     }
 }

@@ -40,7 +40,7 @@ void HurlyBurly4::setup(){
 //--------------------------------------------------------------
 void HurlyBurly4::update(){
     frame++;
-    if (frame % 30 == 0) {
+    if (frame % 15 == 0) {
         for (int i = 0; i < FONTS_LINE; i++) {
             for (int j = 0; j < FONTS_COLUMN; j++) {
                 colorFlag[i][j] = ofRandom(0, 3);

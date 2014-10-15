@@ -22,10 +22,7 @@ void ChikaChika::setup(){
 
 //--------------------------------------------------------------
 void ChikaChika::update(){
-    frame++;
-    if (frame % 10 == 0) {
-        colorFlag = ofRandom(0, 3);
-    }
+    colorFlag = ofRandom(0, 3);
 }
 
 //--------------------------------------------------------------
