@@ -16,6 +16,7 @@
 		8F72FB1919EAE71400DFB4D6 /* HurlyBurly3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F72FB1719EAE71400DFB4D6 /* HurlyBurly3.cpp */; };
 		8F7435401973C860004DAC03 /* Intro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F74353E1973C860004DAC03 /* Intro.cpp */; };
 		8F7435581973DA20004DAC03 /* Rectangular.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F7435561973DA20004DAC03 /* Rectangular.cpp */; };
+		8F8567D219EEDBA3008A492F /* TrianglesOnLines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F8567D019EEDBA3008A492F /* TrianglesOnLines.cpp */; };
 		8F87D4CC19E84AA4002201B5 /* Visualizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D4CA19E84AA4002201B5 /* Visualizer.cpp */; };
 		8F87D4D119E84D9F002201B5 /* Ink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D4CF19E84D9F002201B5 /* Ink.cpp */; };
 		8F87D4DE19E85309002201B5 /* Wave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D4DC19E85309002201B5 /* Wave.cpp */; };
@@ -105,6 +106,8 @@
 		8F74353F1973C860004DAC03 /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
 		8F7435561973DA20004DAC03 /* Rectangular.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangular.cpp; sourceTree = "<group>"; };
 		8F7435571973DA20004DAC03 /* Rectangular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangular.h; sourceTree = "<group>"; };
+		8F8567D019EEDBA3008A492F /* TrianglesOnLines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrianglesOnLines.cpp; sourceTree = "<group>"; };
+		8F8567D119EEDBA3008A492F /* TrianglesOnLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrianglesOnLines.h; sourceTree = "<group>"; };
 		8F87D4CA19E84AA4002201B5 /* Visualizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Visualizer.cpp; sourceTree = "<group>"; };
 		8F87D4CB19E84AA4002201B5 /* Visualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visualizer.h; sourceTree = "<group>"; };
 		8F87D4CF19E84D9F002201B5 /* Ink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ink.cpp; sourceTree = "<group>"; };
@@ -264,6 +267,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8F8567D019EEDBA3008A492F /* TrianglesOnLines.cpp */,
+				8F8567D119EEDBA3008A492F /* TrianglesOnLines.h */,
 				8F95D48E19EED0F500A74D86 /* Nexus.cpp */,
 				8F95D48F19EED0F500A74D86 /* Nexus.h */,
 				8F95D48919EECDA500A74D86 /* MonochromeStripeMove.cpp */,
@@ -436,6 +441,7 @@
 				8FF473E619E83A4C00A26ECC /* Arc.cpp in Sources */,
 				8FCE27FC19EBBF1F00C73349 /* OpeningTitle.cpp in Sources */,
 				8F9C34A219ED1BFA00F1E31F /* HurlyBurly4.cpp in Sources */,
+				8F8567D219EEDBA3008A492F /* TrianglesOnLines.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				8F8F279D1993EFE100CDCB51 /* Hexagon.cpp in Sources */,
 				8F87D4E919E854D2002201B5 /* Pentagon.cpp in Sources */,

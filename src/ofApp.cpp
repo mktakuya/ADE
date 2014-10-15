@@ -101,9 +101,18 @@ void ofApp::update(){
             break;
             
         case 12:
+            if (sceneChangedFlag == true) {
+                ofBackground(255);
+                ofSetCircleResolution(3);
+                ofFill();
+                SX22TrianglesOnLines.setup();
+                sceneChangedFlag = false;
+            }
+            SX22TrianglesOnLines.update();
             break;
             
         case 13:
+            ofSetCircleResolution(22);
             break;
             
         case 14:
@@ -366,7 +375,7 @@ void ofApp::draw(){
             break;
             
         case 12:
-            ofBackground(0, 0, 255);
+            SX22TrianglesOnLines.draw();
             break;
             
         case 13:

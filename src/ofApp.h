@@ -32,6 +32,7 @@
 #include "MonochromeStripe.h"
 #include "MonochromeStripeMove.h"
 #include "Nexus.h"
+#include "TrianglesOnLines.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -84,4 +85,5 @@ public:
     MonochromeStripe SX19MonochromeStripe;
     MonochromeStripeMove SX20MonochromeStripeMove;
     Nexus SX21Nexus;
+    TrianglesOnLines SX22TrianglesOnLines;
 };
