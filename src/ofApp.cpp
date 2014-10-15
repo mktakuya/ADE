@@ -234,7 +234,14 @@ void ofApp::update(){
             break;
             
         case 30:
-            // 9の2番め
+            if (sceneChangedFlag == true) {
+                ofBackground(255);
+                ofEnableAlphaBlending();
+                ofEnableSmoothing();
+                SX17Triangle.setup();
+                sceneChangedFlag = false;
+            }
+            SX17Triangle.update();
             break;
             
         case 31:
@@ -403,7 +410,7 @@ void ofApp::draw(){
             break;
             
         case 30:
-            ofBackground(0, 0, 255);
+            SX17Triangle.draw();
             break;
             
         case 31:

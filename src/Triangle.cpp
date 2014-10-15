@@ -2,10 +2,6 @@
 
 //--------------------------------------------------------------
 void Triangle::setup(){
-	ofBackground(255);
-	ofEnableAlphaBlending();
-	ofEnableSmoothing();
-	
 	float x, y;
 	outline = 2.5;
       pieces = 120;
