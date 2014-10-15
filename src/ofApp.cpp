@@ -209,7 +209,11 @@ void ofApp::update(){
             break;
             
         case 26:
-            // 太めストライプ
+            if (sceneChangedFlag == true) {
+                SX18PizzaStripe.setup();
+                sceneChangedFlag = false;
+            }
+            SX18PizzaStripe.update();
             break;
             
         case 27:
@@ -394,7 +398,7 @@ void ofApp::draw(){
             break;
             
         case 26:
-            ofBackground(0, 0, 255);
+            SX18PizzaStripe.draw();
             break;
             
         case 27:
