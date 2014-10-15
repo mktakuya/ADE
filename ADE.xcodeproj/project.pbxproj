@@ -27,6 +27,7 @@
 		8FA6E38E19766FA000427216 /* EnergyBliss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6E38C19766FA000427216 /* EnergyBliss.cpp */; };
 		8FB7AFB819E900CE00CEB850 /* HurlyBurly1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB7AFB619E900CE00CEB850 /* HurlyBurly1.cpp */; };
 		8FB7AFBB19E90A0100CEB850 /* HurlyBurly2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB7AFB919E90A0100CEB850 /* HurlyBurly2.cpp */; };
+		8FC1D60A19EEBBD500C22F58 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1D60819EEBBD500C22F58 /* Triangle.cpp */; };
 		8FCE27FC19EBBF1F00C73349 /* OpeningTitle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE27FA19EBBF1F00C73349 /* OpeningTitle.cpp */; };
 		8FF473E619E83A4C00A26ECC /* Arc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FF473E419E83A4C00A26ECC /* Arc.cpp */; };
 		8FF958A4198D1F6D00B84FE9 /* Rectfall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FF958A2198D1F6D00B84FE9 /* Rectfall.cpp */; };
@@ -122,6 +123,8 @@
 		8FB7AFB719E900CE00CEB850 /* HurlyBurly1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HurlyBurly1.h; sourceTree = "<group>"; };
 		8FB7AFB919E90A0100CEB850 /* HurlyBurly2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HurlyBurly2.cpp; sourceTree = "<group>"; };
 		8FB7AFBA19E90A0100CEB850 /* HurlyBurly2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HurlyBurly2.h; sourceTree = "<group>"; };
+		8FC1D60819EEBBD500C22F58 /* Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
+		8FC1D60919EEBBD500C22F58 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
 		8FCE27FA19EBBF1F00C73349 /* OpeningTitle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpeningTitle.cpp; sourceTree = "<group>"; };
 		8FCE27FB19EBBF1F00C73349 /* OpeningTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeningTitle.h; sourceTree = "<group>"; };
 		8FF473E419E83A4C00A26ECC /* Arc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Arc.cpp; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8FC1D60819EEBBD500C22F58 /* Triangle.cpp */,
+				8FC1D60919EEBBD500C22F58 /* Triangle.h */,
 				8FA1E0D919ED6E16003D59C8 /* ChikaChika.cpp */,
 				8FA1E0DA19ED6E16003D59C8 /* ChikaChika.h */,
 				8F9C34B219ED623C00F1E31F /* Tricle.cpp */,
@@ -415,6 +420,7 @@
 				8F9C34B419ED623C00F1E31F /* Tricle.cpp in Sources */,
 				8F87D4DE19E85309002201B5 /* Wave.cpp in Sources */,
 				8F72FB1919EAE71400DFB4D6 /* HurlyBurly3.cpp in Sources */,
+				8FC1D60A19EEBBD500C22F58 /* Triangle.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				8F87D4D119E84D9F002201B5 /* Ink.cpp in Sources */,
 				8FF958A4198D1F6D00B84FE9 /* Rectfall.cpp in Sources */,
