@@ -248,11 +248,19 @@ void ofApp::update(){
             break;
             
         case 27:
-            // トライフォース
+            if (sceneChangedFlag == true) {
+            	ofSetCircleResolution(3);
+            	ofEnableSmoothing();
+            	ofBackground(0);
+                SX26TriForce.setup();
+                sceneChangedFlag = false;
+            }
+            SX26TriForce.update();
             break;
             
         case 28:
             if (sceneChangedFlag == true) {
+                ofSetCircleResolution(64);
                 ofBackground(0);
                 SX5Visualizer.setup();
                 sceneChangedFlag = false;
@@ -459,7 +467,7 @@ void ofApp::draw(){
             break;
             
         case 27:
-            ofBackground(0, 0, 255);
+            SX26TriForce.draw();
             break;
             
         case 28:

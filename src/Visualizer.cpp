@@ -5,7 +5,6 @@ void Visualizer::setup(){
 
 	ofEnableAlphaBlending();
 	ofEnableSmoothing();
-	ofSetCircleResolution(64);
 
 	rect_width = 5;
 	rect_interval = 15.0;

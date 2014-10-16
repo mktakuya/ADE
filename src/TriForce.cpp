@@ -2,17 +2,12 @@
 
 //--------------------------------------------------------------
 void TriForce::setup(){
-
-	ofSetCircleResolution(3);
-	ofEnableSmoothing();
-	ofBackground(0);
-
 	drawFlag = 0;
+    radius = 175;
 }
 
 //--------------------------------------------------------------
 void TriForce::update(){
-
 	if (drawFlag == 1) {
 		drawFlag = 0;
 	}
@@ -33,19 +28,19 @@ void TriForce::draw(){
 		ofPushMatrix();
 		ofTranslate(ofGetWidth() / 2.0, ofGetHeight() / 2.0 - 30);
 		ofRotateZ(90);
-		ofCircle(0, 0, 165);
+		ofCircle(0, 0, radius);
 		ofPopMatrix();
 
 		ofPushMatrix();
-		ofTranslate(ofGetWidth() / 2.0 - 140, (ofGetHeight() / 6.0) * 5 - 25);
+		ofTranslate(ofGetWidth() / 2.0 - 150, (ofGetHeight() / 6.0) * 5 - 25);
 		ofRotateZ(90);
-		ofCircle(0, 0, 165);
+		ofCircle(0, 0, radius);
 		ofPopMatrix();
 
 		ofPushMatrix();
-		ofTranslate(ofGetWidth() / 2.0 + 140, (ofGetHeight() / 6.0) * 5 -25);
+		ofTranslate(ofGetWidth() / 2.0 + 150, (ofGetHeight() / 6.0) * 5 -25);
 		ofRotateZ(90);
-		ofCircle(0, 0, 165);
+		ofCircle(0, 0, radius);
 		ofPopMatrix();
 	}
 
