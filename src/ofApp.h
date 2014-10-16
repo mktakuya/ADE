@@ -37,6 +37,7 @@
 #include "Trink.h"
 #include "RotateShimaShima.h"
 #include "TriForce.h"
+#include "Spotlights.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -94,4 +95,5 @@ public:
     Trink SX24Trink;
     RotateShimaShima SX25RotateShimaShima;
     TriForce SX26TriForce;
+    Spotlights SX27Spotlights;
 };
