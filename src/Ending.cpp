@@ -2,11 +2,6 @@
 
 //--------------------------------------------------------------
 void Ending::setup(){
-
-	ofSetCircleResolution(3);
-	ofEnableSmoothing();
-	ofBackground(255);
-
 	for (int i = 0; i < 3; i++) {
 		degree[i] = ofRandom(0, 90);
 		degdeg[i] = ofRandom(0.1, 1) ;

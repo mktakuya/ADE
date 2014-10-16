@@ -19,6 +19,7 @@
 		8F4CCB3519F03F7C002DB917 /* ofxCvShortImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F4CCAC519F03F7B002DB917 /* ofxCvShortImage.cpp */; };
 		8F4CCB3619F03F7C002DB917 /* opencv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4CCB2E19F03F7C002DB917 /* opencv.a */; };
 		8F4CCB3919F03FB2002DB917 /* Spotlights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F4CCB3719F03FB2002DB917 /* Spotlights.cpp */; };
+		8F4CCB3E19F0475F002DB917 /* Ending.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F4CCB3C19F0475F002DB917 /* Ending.cpp */; };
 		8F63597A1979796400B9F3AF /* Stripe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6359781979796400B9F3AF /* Stripe.cpp */; };
 		8F672CBC19EAB78B0002C674 /* MonochromeTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F672CBA19EAB78B0002C674 /* MonochromeTile.cpp */; };
 		8F6B7B5B197658F600E0C2CC /* Bubbles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B7B59197658F600E0C2CC /* Bubbles.cpp */; };
@@ -209,6 +210,8 @@
 		8F4CCB2E19F03F7C002DB917 /* opencv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = opencv.a; sourceTree = "<group>"; };
 		8F4CCB3719F03FB2002DB917 /* Spotlights.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Spotlights.cpp; sourceTree = "<group>"; };
 		8F4CCB3819F03FB2002DB917 /* Spotlights.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spotlights.h; sourceTree = "<group>"; };
+		8F4CCB3C19F0475F002DB917 /* Ending.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ending.cpp; sourceTree = "<group>"; };
+		8F4CCB3D19F0475F002DB917 /* Ending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ending.h; sourceTree = "<group>"; };
 		8F6359781979796400B9F3AF /* Stripe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stripe.cpp; sourceTree = "<group>"; };
 		8F6359791979796400B9F3AF /* Stripe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stripe.h; sourceTree = "<group>"; };
 		8F672CBA19EAB78B0002C674 /* MonochromeTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonochromeTile.cpp; sourceTree = "<group>"; };
@@ -669,6 +672,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8F4CCB3C19F0475F002DB917 /* Ending.cpp */,
+				8F4CCB3D19F0475F002DB917 /* Ending.h */,
 				8F4CCB3719F03FB2002DB917 /* Spotlights.cpp */,
 				8F4CCB3819F03FB2002DB917 /* Spotlights.h */,
 				8F8A134519F02FA100EC8BBF /* TriForce.cpp */,
@@ -840,6 +845,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4CCB3E19F0475F002DB917 /* Ending.cpp in Sources */,
 				8F95D48B19EECDA500A74D86 /* MonochromeStripeMove.cpp in Sources */,
 				8F7435581973DA20004DAC03 /* Rectangular.cpp in Sources */,
 				8F8567D519EFFF38008A492F /* Gravity.cpp in Sources */,
