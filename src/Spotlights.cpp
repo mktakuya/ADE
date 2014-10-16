@@ -2,12 +2,6 @@
 
 //--------------------------------------------------------------
 void Spotlights::setup(){
-
-	// ofSetFullscreen(true);
-
-	ofSetCircleResolution(64);
-	ofEnableSmoothing();
-	ofBackground(0);
 	// Scene config setup
 	// 0 => draw , 1 => do not draw
 	drawCircleFlag = 1;

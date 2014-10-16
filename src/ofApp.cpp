@@ -288,7 +288,15 @@ void ofApp::update(){
             break;
             
         case 31:
-            // スポットライト
+            if (sceneChangedFlag == true) {
+            	ofSetCircleResolution(64);
+            	ofEnableSmoothing();
+            	ofBackground(0);
+                SX27Spotlights.setup();
+                sceneChangedFlag = false;
+            }
+            SX27Spotlights.update();
+            break;
             
         case 32:
             if (sceneChangedFlag == true) {
@@ -483,7 +491,7 @@ void ofApp::draw(){
             break;
             
         case 31:
-            ofBackground(0, 0, 255);
+            SX27Spotlights.draw();
             break;
             
         case 32:
