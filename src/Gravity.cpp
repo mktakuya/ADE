@@ -2,18 +2,14 @@
 
 //--------------------------------------------------------------
 void Gravity::setup(){
-	ofBackground(0);
-	ofEnableAlphaBlending();
-	ofEnableSmoothing();
-
 	outline = 2.5;
-      pieces = 120;
-      	yboader = 300;
-       xboader = 600;
-
-       gravity = 0.03;
-       friction = 0.989;
-
+    pieces = 120;
+    yboader = 300;
+    xboader = 600;
+    
+    gravity = 0.03;
+    friction = 0.989;
+    
 	for(int cnt = 0; cnt < pieces; cnt++){
 		x = ofRandom(-450, 450);
 		y = ofRandom(-350, 350);
@@ -23,7 +19,7 @@ void Gravity::setup(){
 			TriangleDirectionVector[cnt].x = ofRandom(-2, 1); //X軸方向の移動速度
 			TriangleDirectionVector[cnt].y = ofRandom(-2, 1); //Y軸方向の移動速度
 		}
-
+        
 		alpha[cnt] = ofRandom(45, 100);
 		pattern[cnt] = floor(ofRandom(0, 1) + 0.5);
 	}
