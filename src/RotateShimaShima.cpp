@@ -1,12 +1,7 @@
-#include "RotateShimashima.h"
+#include "RotateShimaShima.h"
 
 //--------------------------------------------------------------
-void RotateShimashima::setup(){
-
-	ofEnableSmoothing();
-	ofBackground(255);
-	ofSetFrameRate(50);
-
+void RotateShimaShima::setup(){
 	rotateFlag = true;
 	degree = 0;
 	colorType = 0;
@@ -14,7 +9,7 @@ void RotateShimashima::setup(){
 }
 
 //--------------------------------------------------------------
-void RotateShimashima::update(){
+void RotateShimaShima::update(){
 
 	if (degree >= 180) {
 		if(colorType == 3) {
@@ -30,7 +25,7 @@ void RotateShimashima::update(){
 }
 
 //--------------------------------------------------------------
-void RotateShimashima::draw(){
+void RotateShimaShima::draw(){
 
 	float color[4][3] = {{127, 177, 201}, {255, 210, 92}, {202, 228, 79}, {255, 195, 89}};
 

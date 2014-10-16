@@ -19,6 +19,7 @@
 		8F8567D219EEDBA3008A492F /* TrianglesOnLines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F8567D019EEDBA3008A492F /* TrianglesOnLines.cpp */; };
 		8F8567D519EFFF38008A492F /* Gravity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F8567D319EFFF38008A492F /* Gravity.cpp */; };
 		8F8567DC19F00207008A492F /* Trink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F8567DA19F00207008A492F /* Trink.cpp */; };
+		8F8567E319F0059C008A492F /* RotateShimaShima.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F8567E119F0059C008A492F /* RotateShimaShima.cpp */; };
 		8F87D4CC19E84AA4002201B5 /* Visualizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D4CA19E84AA4002201B5 /* Visualizer.cpp */; };
 		8F87D4D119E84D9F002201B5 /* Ink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D4CF19E84D9F002201B5 /* Ink.cpp */; };
 		8F87D4DE19E85309002201B5 /* Wave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D4DC19E85309002201B5 /* Wave.cpp */; };
@@ -114,6 +115,8 @@
 		8F8567D419EFFF38008A492F /* Gravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gravity.h; sourceTree = "<group>"; };
 		8F8567DA19F00207008A492F /* Trink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Trink.cpp; sourceTree = "<group>"; };
 		8F8567DB19F00207008A492F /* Trink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trink.h; sourceTree = "<group>"; };
+		8F8567E119F0059C008A492F /* RotateShimaShima.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RotateShimaShima.cpp; sourceTree = "<group>"; };
+		8F8567E219F0059C008A492F /* RotateShimaShima.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateShimaShima.h; sourceTree = "<group>"; };
 		8F87D4CA19E84AA4002201B5 /* Visualizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Visualizer.cpp; sourceTree = "<group>"; };
 		8F87D4CB19E84AA4002201B5 /* Visualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visualizer.h; sourceTree = "<group>"; };
 		8F87D4CF19E84D9F002201B5 /* Ink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ink.cpp; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8F8567E119F0059C008A492F /* RotateShimaShima.cpp */,
+				8F8567E219F0059C008A492F /* RotateShimaShima.h */,
 				8F8567DA19F00207008A492F /* Trink.cpp */,
 				8F8567DB19F00207008A492F /* Trink.h */,
 				8F8567D319EFFF38008A492F /* Gravity.cpp */,
@@ -466,6 +471,7 @@
 				8F87D4D119E84D9F002201B5 /* Ink.cpp in Sources */,
 				8FF958A4198D1F6D00B84FE9 /* Rectfall.cpp in Sources */,
 				8F87D4CC19E84AA4002201B5 /* Visualizer.cpp in Sources */,
+				8F8567E319F0059C008A492F /* RotateShimaShima.cpp in Sources */,
 				8F95D49019EED0F500A74D86 /* Nexus.cpp in Sources */,
 				8FA6E38E19766FA000427216 /* EnergyBliss.cpp in Sources */,
 				8FA1E0DB19ED6E16003D59C8 /* ChikaChika.cpp in Sources */,
