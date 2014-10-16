@@ -33,6 +33,7 @@
 #include "MonochromeStripeMove.h"
 #include "Nexus.h"
 #include "TrianglesOnLines.h"
+#include "Gravity.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -86,4 +87,5 @@ public:
     MonochromeStripeMove SX20MonochromeStripeMove;
     Nexus SX21Nexus;
     TrianglesOnLines SX22TrianglesOnLines;
+    Gravity SX23Gravity;
 };

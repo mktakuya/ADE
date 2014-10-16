@@ -112,7 +112,15 @@ void ofApp::update(){
             break;
             
         case 13:
-            ofSetCircleResolution(22);
+            if (sceneChangedFlag == true) {
+            	ofBackground(0);
+            	ofEnableAlphaBlending();
+            	ofEnableSmoothing();
+                ofSetCircleResolution(22);
+                SX23Gravity.setup();
+                sceneChangedFlag = false;
+            }
+            SX23Gravity.update();
             break;
             
         case 14:
@@ -373,7 +381,7 @@ void ofApp::draw(){
             break;
             
         case 13:
-            ofBackground(0, 0, 255);
+            SX23Gravity.draw();
             break;
             
         case 14:
