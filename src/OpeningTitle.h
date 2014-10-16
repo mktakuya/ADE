@@ -19,8 +19,5 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
-    int radius;
-    bool grow;
-    
     ofTrueTypeFont font;
 };

@@ -589,13 +589,10 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    S00OpeningTitle.grow = true;
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-    S00OpeningTitle.grow = false;
-    
 }
 
 //--------------------------------------------------------------
