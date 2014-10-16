@@ -319,7 +319,14 @@ void ofApp::update(){
             SX20MonochromeStripeMove.update();
             
         case 34:
-            // エンドロール
+            if (sceneChangedFlag == true) {
+            	ofSetCircleResolution(3);
+            	ofEnableSmoothing();
+            	ofBackground(255);
+                SX28Ending.setup();
+                sceneChangedFlag = false;
+            }
+            SX28Ending.update();
             break;
             
         case 35:
@@ -510,7 +517,7 @@ void ofApp::draw(){
             break;
             
         case 34:
-            ofBackground(0, 0, 255);
+            SX28Ending.draw();
             break;
             
         case 35:
