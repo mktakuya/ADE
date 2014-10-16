@@ -125,6 +125,7 @@ void ofApp::update(){
             
         case 14:
             if (sceneChangedFlag == true) {
+                ofFill();
                 ofBackground(0);
                 sX1Rectfall.setup();
                 sceneChangedFlag = false;
@@ -297,15 +298,30 @@ void ofApp::update(){
             
         case 34:
             // エンドロール
+            break;
             
         case 35:
             // 真っ白
+            break;
+            
+        case 36:
+            if (sceneChangedFlag == true) {
+            	ofEnableSmoothing();
+            	ofSetCircleResolution(3);
+            	ofBackground(255);
+                SX24Trink.setup();
+                sceneChangedFlag = false;
+            }
+            SX24Trink.update();
+            break;
             
         case 37:
-            // 黒三角形で埋め尽くし→END
+            // 真っ黒
+            break;
             
         case 50:
             if (sceneChangedFlag == true) {
+                ofSetCircleResolution(22);
                 ofBackground(255);
                 SX7Wave.setup();
                 sceneChangedFlag = false;
@@ -474,7 +490,7 @@ void ofApp::draw(){
             break;
             
         case 36:
-            ofBackground(0, 0, 255);
+            SX24Trink.draw();
             break;
             
         case 37:

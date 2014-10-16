@@ -2,10 +2,6 @@
 
 //--------------------------------------------------------------
 void Trink::setup(){
-
-	ofEnableSmoothing();
-	ofSetCircleResolution(3);
-	ofBackground(255);
 	c = circleDiam;
 	circles = 0;
 	d = 0.1;

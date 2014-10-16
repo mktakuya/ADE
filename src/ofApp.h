@@ -34,6 +34,7 @@
 #include "Nexus.h"
 #include "TrianglesOnLines.h"
 #include "Gravity.h"
+#include "Trink.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -88,4 +89,5 @@ public:
     Nexus SX21Nexus;
     TrianglesOnLines SX22TrianglesOnLines;
     Gravity SX23Gravity;
+    Trink SX24Trink;
 };
