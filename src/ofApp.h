@@ -35,6 +35,7 @@
 #include "TrianglesOnLines.h"
 #include "Gravity.h"
 #include "Trink.h"
+#include "RotateShimaShima.h"
 
 class ofApp : public ofBaseApp{
 public:
@@ -90,4 +91,5 @@ public:
     TrianglesOnLines SX22TrianglesOnLines;
     Gravity SX23Gravity;
     Trink SX24Trink;
+    RotateShimaShima SX25RotateShimaShima;
 };

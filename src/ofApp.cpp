@@ -168,8 +168,14 @@ void ofApp::update(){
             break;
             
         case 19:
-            // Stripe2
-            ofSetCircleResolution(22);
+            if (sceneChangedFlag == true) {
+            	ofEnableSmoothing();
+            	ofBackground(255);
+            	ofSetFrameRate(50);
+                SX25RotateShimaShima.setup();
+                sceneChangedFlag = false;
+            }
+            SX25RotateShimaShima.update();
             break;
             
         case 20:
@@ -421,7 +427,7 @@ void ofApp::draw(){
             break;
             
         case 19:
-            ofBackground(0, 0, 255);
+            SX25RotateShimaShima.draw();
             break;
             
         case 20:
