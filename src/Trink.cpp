@@ -6,7 +6,7 @@ void Trink::setup(){
 	circles = 0;
 	d = 0.1;
 	for (int i = 0; i < 1000; i++) {
-		circleDiam[i] = ofRandom(70, 300);
+		circleDiam[i] = ofRandom(200, 450);
 		circlePosition[i].set(ofRandom(0, ofGetWidth()), ofRandom(0, ofGetHeight()));
 		deg[i] = ofRandom(0, 270);
 	}
