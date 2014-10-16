@@ -341,6 +341,11 @@ void ofApp::update(){
             // 真っ黒
             break;
             
+        default:
+            ofBackground(0);
+            break;
+            
+            /*
         case 50:
             if (sceneChangedFlag == true) {
                 ofSetCircleResolution(22);
@@ -359,6 +364,7 @@ void ofApp::update(){
             }
             SX8Pentagon.update();
             break;
+             */
     }
 }
 
@@ -519,7 +525,10 @@ void ofApp::draw(){
             ofBackground(0);
             break;
             
+        default:
+            break;
             
+            /*
         case 50:
             SX6Ink.draw();
             break;
@@ -531,6 +540,7 @@ void ofApp::draw(){
         case 52:
             SX8Pentagon.draw();
             break;
+             */
     }
 }
 
