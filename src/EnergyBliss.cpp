@@ -62,15 +62,15 @@ void EnergyBliss::draw(){
 			if (12 <= times) {
 				height += 10 + lyrics[1].height;
 				lyrics[2].draw(width, height);
-				if (18 <= times) {
+				if (19 <= times) {
 					width += 150 + lyrics[1].width;
 					height -= lyrics[2].height + 10;
 					lyrics[3].draw(width, height - 80, 200, 225);
-					if (20 <= times) {
+					if (21 <= times) {
 						width += lyrics[3].width;
-						lyrics[4].draw(width + 70, height);
-						if (21 <= times) {
-							//times = 0;
+						lyrics[4].draw(width + 75, height);
+						if (22 <= times) {
+							times = 0;
 						}
 					}
 				}
