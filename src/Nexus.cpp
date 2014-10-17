@@ -13,11 +13,11 @@ void Nexus::update(){
 	
 	for (int i = 0; i < 50; i++) {
 		if (position[i].x <= 0) {
-			position[i].x = ofGetWidth() * 1.5;
+			position[i].x = ofGetWidth() * 2;
 		}
 
 		else {
-			position[i].x -= 5;
+			position[i].x -= 10;
 		}
 	}
 
