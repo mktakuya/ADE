@@ -69,9 +69,11 @@ void EnergyBliss::draw(){
 					if (21 <= times) {
 						width += lyrics[3].width;
 						lyrics[4].draw(width + 75, height);
-						if (22 <= times) {
+						/*
+                         if (22 <= times) {
 							times = 0;
 						}
+                         */
 					}
 				}
 			}
