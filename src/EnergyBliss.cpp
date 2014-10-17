@@ -70,7 +70,7 @@ void EnergyBliss::draw(){
 						width += lyrics[3].width;
 						lyrics[4].draw(width + 70, height);
 						if (21 <= times) {
-							times = 0;
+							//times = 0;
 						}
 					}
 				}
