@@ -23,7 +23,7 @@ void Visualizer::setup(){
 	for (int i = 0; i < CIRCLE; i++) {
 		circlePosition[i].set(ofRandom(0, ofGetWidth()), ofRandom(0, ofGetHeight()));
 		circleVec[i].set(ofRandom(-5, 6), ofRandom(-6, 5));
-		radius[i] = ofRandom(90, 150);
+		radius[i] = ofRandom(150, 250);
 	}
 
 }

@@ -23,7 +23,7 @@ public:
     
     ofTrueTypeFont font;
     
-    static const int DIAMOND_NUM = 50;
+    static const int DIAMOND_NUM = 30;
     
     int diamondWidth[DIAMOND_NUM];
     int diamondHeight[DIAMOND_NUM];

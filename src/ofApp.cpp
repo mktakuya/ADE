@@ -63,6 +63,7 @@ void ofApp::update(){
             
         case 7:
             if (sceneChangedFlag == true) {
+                ofSetLineWidth(3);
                 s03Bubbles.setup();
                 sceneChangedFlag = false;
             }
@@ -72,6 +73,7 @@ void ofApp::update(){
             
         case 8:
             if (sceneChangedFlag == true) {
+                ofSetLineWidth(1);
                 s05EnergyBliss.setup();
                 sceneChangedFlag = false;
             }

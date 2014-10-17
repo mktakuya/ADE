@@ -4,7 +4,7 @@
 void HurlyBurly3::setup(){
     
     for (int i = 0; i < DIAMOND_NUM; i++) {
-        diamondWidth[i] = ofRandom(50, 150);
+        diamondWidth[i] = ofRandom(100, 250);
         
         diamondX[i] = ofRandom(0, ofGetWidth());
         diamondY[i] = ofRandom(0, ofGetHeight());
@@ -21,7 +21,7 @@ void HurlyBurly3::update(){
     
     if (frame % 30 == 0) {
         for (int i = 0; i < DIAMOND_NUM; i++) {
-            diamondWidth[i] = ofRandom(50, 150);
+            diamondWidth[i] = ofRandom(100, 250);
             diamondX[i] = ofRandom(0, ofGetWidth());
             diamondY[i] = ofRandom(0, ofGetHeight());
             colorNumbers[i] = ofRandom(0, 3);

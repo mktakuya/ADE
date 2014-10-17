@@ -4,7 +4,6 @@
 //--------------------------------------------------------------
 void Bubbles::setup(){
     ofBackground(255);
-    ofSetLineWidth(1);
     ofSetCircleResolution(64);
     for (int i = 0; i < BUBBLES_NUM; i++) {
         bubbleR[i] = ofRandom(255);

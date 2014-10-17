@@ -10,7 +10,7 @@ void Ink::setup(){
 	circles = 0;
 	d = 0.1;
 	for (int i = 0; i < 1000; i++) {
-		circleDiam[i] = ofRandom(70, 300);
+		circleDiam[i] = ofRandom(130, 330);
 		circlePosition[i].set(ofRandom(ofGetWidth()), ofRandom(ofGetHeight()));
 	}
 
