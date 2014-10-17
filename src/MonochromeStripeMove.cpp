@@ -10,7 +10,7 @@ void MonochromeStripeMove::setup(){
 void MonochromeStripeMove::update(){
     frame++;
     
-    switch (frame / 30) {
+    switch (frame / 20) {
         case 1:
             colorFlag[0] = false;
             colorFlag[1] = true;
@@ -58,8 +58,9 @@ void MonochromeStripeMove::draw(){
         if (colorFlag[i] == true) {
             ofSetColor(0);
         } else {
-            if (frame / 30 >= 4) {
+            if (frame / 20 >= 4) {
                 ofSetColor(255);
+                ofRect(0, 0, ofGetWidth() / 2, ofGetHeight());
             } else {
                 ofSetColor(255, 255, 255, 0);
             }
