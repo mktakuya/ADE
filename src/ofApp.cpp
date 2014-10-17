@@ -9,6 +9,8 @@ void ofApp::setup(){
     S00OpeningTitle.setup();
     mouseX = ofGetWidth() / 2;
     mouseY = ofGetHeight();
+    
+    grayColor = 100;
 }
 
 //--------------------------------------------------------------
@@ -35,7 +37,7 @@ void ofApp::update(){
             
         case 3:
             if (sceneChangedFlag == true) {
-                ofBackground(0);
+                ofBackground(grayColor);
                 s02Rectangular.setup();
                 sceneChangedFlag = false;
             }
@@ -113,7 +115,7 @@ void ofApp::update(){
             
         case 13:
             if (sceneChangedFlag == true) {
-            	ofBackground(0);
+            	ofBackground(grayColor);
             	ofEnableAlphaBlending();
             	ofEnableSmoothing();
                 ofSetCircleResolution(22);
@@ -135,6 +137,7 @@ void ofApp::update(){
             
         case 15:
             if (sceneChangedFlag == true) {
+                ofBackground(grayColor);
                 SX4Arc.setup();
                 sceneChangedFlag = false;
             }
@@ -159,7 +162,7 @@ void ofApp::update(){
             
         case 18:
             if (sceneChangedFlag == true) {
-                ofBackground(0);
+                ofBackground(grayColor);
                 ofSetCircleResolution(4);
                 SX12HurlyBurly3.setup();
                 sceneChangedFlag = false;
@@ -191,7 +194,7 @@ void ofApp::update(){
             
         case 21:
             if (sceneChangedFlag == true) {
-                ofBackground(30);
+                ofBackground(grayColor);
                 ofSetCircleResolution(3);
                 SX15Tricle.setup();
                 sceneChangedFlag = false;

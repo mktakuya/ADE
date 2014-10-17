@@ -31,7 +31,6 @@ void HurlyBurly3::update(){
 
 //--------------------------------------------------------------
 void HurlyBurly3::draw(){
-    ofBackground(0);
     ofSetColor(255);
     font.drawString("Hurly Burly", 40, 150);
     
