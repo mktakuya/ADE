@@ -21,7 +21,7 @@ void Spotlights::update(){
 
 	x += dx;
 	// do not draw
-	if (x >= ofGetWidth() / 2.5 - 80 || x <= -1 * (ofGetWidth() / 2.5 - 80)) {
+	if (x >= ofGetWidth() / 2.5 - 30 || x <= -1 * (ofGetWidth() / 2.5 - 30)) {
 		if (img_num == 0) {
 				img_num = 1;
 				cv_img.setFromPixels(hurly_burly[img_num].getPixels(), hurly_burly[img_num].width, hurly_burly[img_num].height);
