@@ -10,10 +10,10 @@ class Rectfall : public ofBaseApp{
         void draw();
 
         int rectcolorNum[3], trianglecolorNum[3];
-        float length;
+        float triangle_interval;
         float triangleDegree[3];
         bool fall;
-        float height, radius;
+        float triangle_locate_height, radius;
         ofColor colors[3];
 
 };
