@@ -185,17 +185,6 @@ void ofApp::update(){
             
         case 20:
             if (sceneChangedFlag == true) {
-            	ofEnableSmoothing();
-            	ofSetCircleResolution(4);
-            	ofBackground(0);
-                SX21Nexus.setup();
-                sceneChangedFlag = false;
-            }
-            SX21Nexus.update();
-            break;
-            
-        case 21:
-            if (sceneChangedFlag == true) {
                 ofBackground(255);
                 ofSetCircleResolution(3);
                 SX15Tricle.setup();
@@ -204,7 +193,7 @@ void ofApp::update(){
             SX15Tricle.update();
             break;
             
-        case 22:
+        case 21:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 ofSetCircleResolution(128);
@@ -215,7 +204,7 @@ void ofApp::update(){
             SX7Wave.update();
             break;
             
-        case 23:
+        case 22:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 ofSetCircleResolution(22);
@@ -226,7 +215,7 @@ void ofApp::update(){
             SX6Ink.update();
             break;
             
-        case 24:
+        case 23:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX13HurlyBurly4.setup();
@@ -235,7 +224,7 @@ void ofApp::update(){
             SX13HurlyBurly4.update();
             break;
             
-        case 25:
+        case 24:
             if (sceneChangedFlag == true) {
                 ofBackground(0);
                 SX14HurlyBurly5.setup();
@@ -244,7 +233,8 @@ void ofApp::update(){
             SX14HurlyBurly5.update();
             break;
             
-        case 26:
+        case 25:
+            // TODO: ここを正方形のやつに変える。 不思議なTasty
             if (sceneChangedFlag == true) {
                 SX18PizzaStripe.setup();
                 sceneChangedFlag = false;
@@ -252,18 +242,18 @@ void ofApp::update(){
             SX18PizzaStripe.update();
             break;
             
-        case 27:
+        case 26:
             if (sceneChangedFlag == true) {
-            	ofSetCircleResolution(3);
             	ofEnableSmoothing();
+            	ofSetCircleResolution(4);
             	ofBackground(0);
-                SX26TriForce.setup();
+                SX21Nexus.setup();
                 sceneChangedFlag = false;
             }
-            SX26TriForce.update();
+            SX21Nexus.update();
             break;
             
-        case 28:
+        case 27:
             if (sceneChangedFlag == true) {
                 ofSetCircleResolution(64);
                 ofBackground(0);
@@ -273,7 +263,7 @@ void ofApp::update(){
             SX5Visualizer.update();
             break;
             
-        case 29:
+        case 28:
             if (sceneChangedFlag == true) {
                 SX16ChikaChika.setup();
                 sceneChangedFlag = false;
@@ -281,7 +271,7 @@ void ofApp::update(){
             SX16ChikaChika.update();
             break;
             
-        case 30:
+        case 29:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 ofEnableAlphaBlending();
@@ -292,7 +282,7 @@ void ofApp::update(){
             SX17Triangle.update();
             break;
             
-        case 31:
+        case 30:
             if (sceneChangedFlag == true) {
             	ofSetCircleResolution(64);
             	ofEnableSmoothing();
@@ -303,7 +293,7 @@ void ofApp::update(){
             SX27Spotlights.update();
             break;
             
-        case 32:
+        case 31:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 SX13HurlyBurly4.setup();
@@ -312,7 +302,7 @@ void ofApp::update(){
             SX13HurlyBurly4.update();
             break;
             
-        case 33:
+        case 32:
             if (sceneChangedFlag == true) {
                 ofBackground(255);
                 ofFill();
@@ -323,7 +313,7 @@ void ofApp::update(){
             SX13HurlyBurly4.update();
             SX20MonochromeStripeMove.update();
             
-        case 34:
+        case 33:
             if (sceneChangedFlag == true) {
             	ofSetCircleResolution(3);
             	ofEnableSmoothing();
@@ -334,11 +324,11 @@ void ofApp::update(){
             SX28Ending.update();
             break;
             
-        case 35:
+        case 34:
             // 真っ白
             break;
             
-        case 36:
+        case 35:
             if (sceneChangedFlag == true) {
             	ofEnableSmoothing();
             	ofSetCircleResolution(3);
@@ -349,7 +339,7 @@ void ofApp::update(){
             SX24Trink.update();
             break;
             
-        case 37:
+        case 36:
             // 真っ黒
             break;
             
@@ -465,75 +455,71 @@ void ofApp::draw(){
             break;
             
         case 20:
-            SX21Nexus.draw();
-            break;
-            
-        case 21:
             SX15Tricle.draw();
             break;
             
-        case 22:
+        case 21:
             SX7Wave.draw();
             break;
             
-        case 23:
+        case 22:
             SX6Ink.draw();
             break;
             
-        case 24:
+        case 23:
             SX13HurlyBurly4.draw();
             break;
             
-        case 25:
+        case 24:
             SX14HurlyBurly5.draw();
             break;
             
-        case 26:
+        case 25:
             SX18PizzaStripe.draw();
             break;
             
-        case 27:
-            SX26TriForce.draw();
+        case 26:
+            SX21Nexus.draw();
             break;
             
-        case 28:
+        case 27:
             SX5Visualizer.draw();
             break;
             
-        case 29:
+        case 28:
             SX16ChikaChika.draw();
             break;
             
-        case 30:
+        case 29:
             SX17Triangle.draw();
             break;
             
-        case 31:
+        case 30:
             SX27Spotlights.draw();
+            break;
+            
+        case 31:
+            SX13HurlyBurly4.draw();
             break;
             
         case 32:
             SX13HurlyBurly4.draw();
-            break;
-            
-        case 33:
-            SX13HurlyBurly4.draw();
             SX20MonochromeStripeMove.draw();
             break;
             
-        case 34:
+        case 33:
             SX28Ending.draw();
             break;
             
-        case 35:
+        case 34:
             ofBackground(255);
             break;
             
-        case 36:
+        case 35:
             SX24Trink.draw();
             break;
             
-        case 37:
+        case 36:
             ofBackground(0);
             break;
             
