@@ -47,6 +47,7 @@ void EnergyBliss::draw(){
 	for(int i = 0; i < piece; i++){
 		for(int j = 1; j <= pNoise[i]; j++){
 			ofSetColor(0, 0, 0, 200);
+			ofSetColor(100); // TODO: 要検討
 			ofFill();
 			ofRect(15 + 40 * i, ofGetHeight() - 40 * j, 20, 20);
 		}
