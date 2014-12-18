@@ -6,6 +6,7 @@ void LiveStage::setup(){
 	ofEnableSmoothing();
 	ofSetCircleResolution(64);
 	ofBackground(120, 120, 120);
+	ofEnableAlphaBlending();
 
 	timer = 0;
 	colorType = 0;
@@ -45,7 +46,6 @@ void LiveStage::update(){
 //--------------------------------------------------------------
 void LiveStage::draw(){
 
-	float color[4][3] = {{127, 177, 201}, {255, 210, 92}, {202, 228, 79}, {255, 195, 89}};
 	ofColor stripeColor[4];
 	stripeColor[0].r = 127; stripeColor[0].g = 177; stripeColor[0].b = 201;
 	stripeColor[1].r = 255; stripeColor[1].g = 210; stripeColor[1].b = 92;
@@ -91,5 +91,7 @@ void LiveStage::draw(){
 			ofRect(LeftPenLight[i], 10, 30);
 		}
 		timer += 0.01;
+		ofSetColor(255, 255, 255, 80);
+		ofCircle(ofGetWidth() / 2.0, ofGetHeight() / 1.5, 230);
 
 }
