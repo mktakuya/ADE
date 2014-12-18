@@ -53,13 +53,13 @@ void Tricle::draw(){
 		ofRotateZ(radian);
 		for (int i = 0; i < 360 / 30; i++) {
 			if (i == (360 / 30) / 2)
-				ofSetColor(232, 86, 239);
+				ofSetColor(243, 152, 0);
 			else
-				ofSetColor(255);
+				ofSetColor(100);
 
 			ofPushMatrix();
 			ofRotateZ(i * 30);
-			ofCircle(renge, 0, 12);
+			ofCircle(renge, 0, 20);
 			ofPopMatrix();
 		}
 		ofPopMatrix();

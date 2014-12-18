@@ -1,4 +1,5 @@
 #include "ofApp.h"
+int grayColor = 100;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -10,7 +11,6 @@ void ofApp::setup(){
     mouseX = ofGetWidth() / 2;
     mouseY = ofGetHeight();
     
-    grayColor = 100;
 }
 
 //--------------------------------------------------------------
@@ -196,7 +196,7 @@ void ofApp::update(){
             
         case 21:
             if (sceneChangedFlag == true) {
-                ofBackground(grayColor);
+                ofBackground(255);
                 ofSetCircleResolution(3);
                 SX15Tricle.setup();
                 sceneChangedFlag = false;

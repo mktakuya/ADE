@@ -56,7 +56,6 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
-    int grayColor;
     int sceneNumber;
     bool sceneChangedFlag;
     
