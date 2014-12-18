@@ -9,7 +9,7 @@ void OpeningTitle::setup(){
     ofSetCircleResolution(64);
     ofBackground(0, 0, 0, 128);
     
-    font.loadFont("hiragino.otf", 90);
+    font.loadFont("hiragino.otf", 75);
 }
 
 //--------------------------------------------------------------
@@ -20,7 +20,7 @@ void OpeningTitle::update(){
 void OpeningTitle::draw(){
     ofSetColor(255, 255, 255);
     font.drawString("Tomakomai N.C.T.", 40, 150);
-    font.drawString("50th Anniv.", 40, 300);
+    font.drawString("Winter Festival 2014", 40, 300);
 }
 
 //--------------------------------------------------------------
