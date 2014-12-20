@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 
-class Rectfall : public ofBaseApp{
+class ofApp : public ofBaseApp{
 
     public:
         void setup();
@@ -15,5 +15,6 @@ class Rectfall : public ofBaseApp{
         bool fall;
         float triangle_locate_height, radius;
         ofColor colors[3];
+        ofImage crystal[3];
 
 };
