@@ -1,12 +1,12 @@
-#include "Rectfall.h"
+#include "ofApp.h"
 
 //--------------------------------------------------------------
-void Rectfall::setup(){
+void ofApp::setup(){
 	ofEnableSmoothing();
 
 	fall = false;
-	colors[0].r = 255; colors[0].g = 255; colors[0].b = 10;
-	colors[1].r = 20;	 colors[1].g = 246; colors[1].b = 255;
+	colors[0].r = 20;	colors[0].g = 246; colors[0].b = 255;
+	colors[1].r = 255; colors[1].g = 255; colors[1].b = 10;
 	colors[2].r = 250; colors[2].g = 0; 	   colors[2].b = 191;
 	triangle_interval = ofGetWidth() / 4.0;
 	triangle_locate_height = ofGetHeight() * 0.15;
@@ -15,13 +15,16 @@ void Rectfall::setup(){
 		triangleDegree[i] = 90;
 		rectcolorNum[i] = i;
 		trianglecolorNum[i] = i;
-
 	}
+
+	crystal[0].loadImage("crystal1.png");
+	crystal[1].loadImage("crystal2.png");
+	crystal[2].loadImage("crystal3.png");
 
 }
 
 //--------------------------------------------------------------
-void Rectfall::update(){
+void ofApp::update(){
 
 	for(int i = 0; i < 3; i++){
 		triangleDegree[i] += 1.5;
@@ -51,14 +54,14 @@ void Rectfall::update(){
 				trianglecolorNum[i] = rectcolorNum[i];
 			}
 		}
-		triangle_locate_height += 15;
-		radius -= 1;
+		triangle_locate_height += 10;
+		radius -= 0.5;
 	}
 
 }
 
 //--------------------------------------------------------------
-void Rectfall::draw(){
+void ofApp::draw(){
 
 	for (int i = 0; i < 3; i++) {
 		ofPushMatrix();
@@ -70,9 +73,10 @@ void Rectfall::draw(){
 		ofPopMatrix();
 
 		if (fall == true) {
-			ofSetCircleResolution(4);
-			ofSetColor(colors[rectcolorNum[i]]);
-			ofCircle(triangle_interval + triangle_interval * i + 1, triangle_locate_height, radius);
+			// ofSetColor(colors[rectcolorNum[i]]);
+			// ofCircle(triangle_interval + triangle_interval * i + 1, triangle_locate_height, radius);
+			ofSetColor(255);
+			crystal[rectcolorNum[i]].draw(triangle_interval + triangle_interval * i + 1 - 50, triangle_locate_height - 50, 100, 100);
 		}
 	}
 
