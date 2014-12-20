@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 
-class ofApp : public ofBaseApp{
+class Rectfall : public ofBaseApp{
 
     public:
         void setup();
