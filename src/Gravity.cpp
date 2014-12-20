@@ -2,28 +2,14 @@
 
 //--------------------------------------------------------------
 void Gravity::setup(){
-<<<<<<< HEAD
 	outline = 0.5;
     pieces = 120;
     yboader = 300;
     xboader = 600;
-    
+
     gravity = 0.03;
     friction = 0.989;
-    
-=======
 
-	ofBackground(100);
-
-	outline = 2.5;
-	pieces = 120;
-	yboader = 300;
-	xboader = 600;
-	
-	gravity = 0.03;
-	friction = 0.989;
-		
->>>>>>> 驚きの白さ
 	for(int cnt = 0; cnt < pieces; cnt++){
 		x = ofRandom(-450, 450);
 		y = ofRandom(-350, 350);
@@ -33,7 +19,7 @@ void Gravity::setup(){
 			TriangleDirectionVector[cnt].x = ofRandom(-2, 1); //X軸方向の移動速度
 			TriangleDirectionVector[cnt].y = ofRandom(-2, 1); //Y軸方向の移動速度
 		}
-				
+
 		alpha[cnt] = ofRandom(45, 100);
 		pattern[cnt] = floor(ofRandom(0, 1) + 0.5);
 	}
@@ -51,7 +37,7 @@ void Gravity::update(){
 			TrianglePositionVector[i][j].x += TriangleDirectionVector[i].x;
 			TrianglePositionVector[i][j].y += TriangleDirectionVector[i].y;
 
-			if (TrianglePositionVector[i][j].x > ofGetWidth() || TrianglePositionVector[i][j].x < 0) 
+			if (TrianglePositionVector[i][j].x > ofGetWidth() || TrianglePositionVector[i][j].x < 0)
 				TriangleDirectionVector[i].x *= -1;
 			if (TrianglePositionVector[i][j].y > ofGetHeight() + 80) {
 				for (int k = 0; k < 3; k++) {
@@ -78,7 +64,7 @@ void Gravity::draw(){
 			ofNoFill();
 			ofSetLineWidth(outline);
 		}
-		else 
+		else
 			ofFill();
 		ofSetColor(colorParam[i % 3], alpha[i]);
 		ofTriangle(TrianglePositionVector[i][0], TrianglePositionVector[i][1], TrianglePositionVector[i][2]);
