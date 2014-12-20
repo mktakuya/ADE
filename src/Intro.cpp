@@ -83,7 +83,7 @@ void Intro::update(){
 //--------------------------------------------------------------
 void Intro::draw(){
 	float param[4][4] = { {30, 30, 30, 255}, {255, 255, 255, 127}, {233, 255, 0, 127}, {0, 195, 255, 127} };
-	float rectColor[4] = {20, 246, 255, 255};
+	float rectColor[4] = {20, 150, 255, 255};
 	if(rectmode == 1)
 		drawBigRect(param[nowrectcolor]);		
 	else
