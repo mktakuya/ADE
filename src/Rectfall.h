@@ -15,6 +15,5 @@ class Rectfall : public ofBaseApp{
         bool fall;
         float triangle_locate_height, radius;
         ofColor colors[3];
-        ofImage crystal[3];
 
 };
