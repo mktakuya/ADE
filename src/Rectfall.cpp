@@ -15,11 +15,8 @@ void Rectfall::setup(){
 		triangleDegree[i] = 90;
 		rectcolorNum[i] = i;
 		trianglecolorNum[i] = i;
-	}
 
-	crystal[0].loadImage("crystal1.png");
-	crystal[1].loadImage("crystal2.png");
-	crystal[2].loadImage("crystal3.png");
+	}
 
 }
 
