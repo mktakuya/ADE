@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 void Triangle::setup(){
 	float x, y;
-	outline = 2.5;
+	outline = 0.5;
       pieces = 120;
       	yboader = 300;
        xboader = 600;
