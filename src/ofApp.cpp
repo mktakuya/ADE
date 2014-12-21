@@ -550,6 +550,7 @@ void ofApp::keyPressed(int key){
     }
     
     // Scenes
+    /*
     switch (sceneNumber) {
         case 1:
             if (key == ' ') {
@@ -561,6 +562,7 @@ void ofApp::keyPressed(int key){
             }
             break;
     }
+     */
 }
 
 //--------------------------------------------------------------
