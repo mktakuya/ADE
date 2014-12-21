@@ -52,13 +52,14 @@ void Ending::draw(){
      font.drawString("Rikako Uchiyama", ofGetWidth() / 2.0 + 80, 650);
      */
 
-	font.drawString("Dancer", ofGetWidth() / 2.0 + 30, 50);
-	font.drawString("Ayane Nakamura", ofGetWidth() / 2.0 + 80, 120);
-	font.drawString("Kaede Satoh", ofGetWidth() / 2.0 + 80, 190);
-	font.drawString("Rikako Uchiyama", ofGetWidth() / 2.0 + 80, 260);
-	font.drawString("Illustration", ofGetWidth() / 2.0 + 30, 350);
-	font.drawString("Kaho Ashizawa", ofGetWidth() / 2.0 + 80,420);
-	font.drawString("Developer", ofGetWidth() / 2.0 + 30, 510);
-	font.drawString("Takuya Mukohira", ofGetWidth() / 2.0 + 80, 580);
-	font.drawString("Toshiaki Seino", ofGetWidth() / 2.0 + 80, 650);
+    int margin = 80;
+	font.drawString("Dancer", ofGetWidth() / 2.0 + 30, 50 + margin);
+	font.drawString("Ayane Nakamura", ofGetWidth() / 2.0 + 80, 120 + margin);
+	font.drawString("Kaede Satoh", ofGetWidth() / 2.0 + 80, 190 + margin);
+	font.drawString("Rikako Uchiyama", ofGetWidth() / 2.0 + 80, 260 + margin);
+	font.drawString("Illustration", ofGetWidth() / 2.0 + 30, 350 + margin);
+	font.drawString("Kaho Ashizawa", ofGetWidth() / 2.0 + 80,420 + margin);
+	font.drawString("Developer", ofGetWidth() / 2.0 + 30, 510 + margin);
+	font.drawString("Takuya Mukohira", ofGetWidth() / 2.0 + 80, 580 + margin);
+	font.drawString("Toshiaki Seino", ofGetWidth() / 2.0 + 80, 650 + margin);
 }
