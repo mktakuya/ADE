@@ -1,7 +1,7 @@
-#include "Rectfall.h"
+#include "ofApp.h"
 
 //--------------------------------------------------------------
-void Rectfall::setup(){
+void ofApp::setup(){
 	ofEnableSmoothing();
 
 	fall = false;
@@ -24,7 +24,7 @@ void Rectfall::setup(){
 }
 
 //--------------------------------------------------------------
-void Rectfall::update(){
+void ofApp::update(){
 
 	for(int i = 0; i < 3; i++){
 		triangleDegree[i] += 1.5;
@@ -61,7 +61,7 @@ void Rectfall::update(){
 }
 
 //--------------------------------------------------------------
-void Rectfall::draw(){
+void ofApp::draw(){
 
 	for (int i = 0; i < 3; i++) {
 		ofPushMatrix();
