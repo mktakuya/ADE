@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F1030E719EEC41700E4B113 /* PizzaStripe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1030E519EEC41700E4B113 /* PizzaStripe.cpp */; };
+		8F192A301A46445900D534E0 /* SquareFall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F192A2E1A46445900D534E0 /* SquareFall.cpp */; };
 		8F436BF819EEC8FE00EAD88A /* MonochromeStripe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F436BF619EEC8FE00EAD88A /* MonochromeStripe.cpp */; };
 		8F43A52A19A33B7900F6EFCC /* LiveStage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F43A52819A33B7900F6EFCC /* LiveStage.cpp */; };
 		8F4CCB2F19F03F7C002DB917 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F4CCAB819F03F7B002DB917 /* ofxCvColorImage.cpp */; };
@@ -104,6 +105,8 @@
 /* Begin PBXFileReference section */
 		8F1030E519EEC41700E4B113 /* PizzaStripe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PizzaStripe.cpp; sourceTree = "<group>"; };
 		8F1030E619EEC41700E4B113 /* PizzaStripe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PizzaStripe.h; sourceTree = "<group>"; };
+		8F192A2E1A46445900D534E0 /* SquareFall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SquareFall.cpp; sourceTree = "<group>"; };
+		8F192A2F1A46445900D534E0 /* SquareFall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareFall.h; sourceTree = "<group>"; };
 		8F436BF619EEC8FE00EAD88A /* MonochromeStripe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonochromeStripe.cpp; sourceTree = "<group>"; };
 		8F436BF719EEC8FE00EAD88A /* MonochromeStripe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonochromeStripe.h; sourceTree = "<group>"; };
 		8F43A52819A33B7900F6EFCC /* LiveStage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LiveStage.cpp; sourceTree = "<group>"; };
@@ -742,6 +745,8 @@
 				8F7435571973DA20004DAC03 /* Rectangular.h */,
 				8F74353E1973C860004DAC03 /* Intro.cpp */,
 				8F74353F1973C860004DAC03 /* Intro.h */,
+				8F192A2E1A46445900D534E0 /* SquareFall.cpp */,
+				8F192A2F1A46445900D534E0 /* SquareFall.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
@@ -876,6 +881,7 @@
 				8FC1D60A19EEBBD500C22F58 /* Triangle.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				8F87D4D119E84D9F002201B5 /* Ink.cpp in Sources */,
+				8F192A301A46445900D534E0 /* SquareFall.cpp in Sources */,
 				8F4CCB3419F03F7C002DB917 /* ofxCvImage.cpp in Sources */,
 				8FF958A4198D1F6D00B84FE9 /* Rectfall.cpp in Sources */,
 				8F87D4CC19E84AA4002201B5 /* Visualizer.cpp in Sources */,

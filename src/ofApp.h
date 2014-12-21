@@ -9,6 +9,7 @@
 #include "Bubbles.h"
 #include "Tile.h"
 #include "EnergyBliss.h"
+#include "SquareFall.h"
 
 #include "Stripe.h"
 #include "Rectfall.h"
@@ -87,7 +88,8 @@ public:
     Tricle SX15Tricle;
     ChikaChika SX16ChikaChika;
     Triangle SX17Triangle;
-    PizzaStripe SX18PizzaStripe;
+    SquareFall SX18SquareFall;
+    //PizzaStripe SX18PizzaStripe;
     MonochromeStripe SX19MonochromeStripe;
     MonochromeStripeMove SX20MonochromeStripeMove;
     Nexus SX21Nexus;

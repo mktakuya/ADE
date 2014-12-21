@@ -236,10 +236,10 @@ void ofApp::update(){
         case 25:
             // TODO: ここを正方形のやつに変える。 不思議なTasty
             if (sceneChangedFlag == true) {
-                SX18PizzaStripe.setup();
+                SX18SquareFall.setup();
                 sceneChangedFlag = false;
             }
-            SX18PizzaStripe.update();
+            SX18SquareFall.update();
             break;
             
         case 26:
@@ -475,7 +475,7 @@ void ofApp::draw(){
             break;
             
         case 25:
-            SX18PizzaStripe.draw();
+            SX18SquareFall.draw();
             break;
             
         case 26:
